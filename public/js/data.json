@@ -12,11 +12,11 @@
 		"./assets/icons/icon-strategic.svg",
 		"./assets/icons/icon-supportive.svg",
 		"./assets/icons/icon-technical.svg",
-		"./assets/featured/feat-logo-andela.svg",
-		"./assets/featured/feat-logo-flexport.svg",
-		"./assets/featured/feat-logo-lendup.svg",
-		"./assets/featured/feat-logo-periscope.svg",
-		"./assets/featured/feat-logo-robinhood.svg",
+		"./assets/featured/feat-logo-andela.png",
+		"./assets/featured/feat-logo-flexport.png",
+		"./assets/featured/feat-logo-lendup.png",
+		"./assets/featured/feat-logo-periscope.png",
+		"./assets/featured/feat-logo-robinhood.png",
 		"./assets/portfolio/logo-andela.svg",
 		"./assets/portfolio/logo-bright.svg",
 		"./assets/portfolio/logo-captain401.svg",
@@ -38,11 +38,11 @@
 		"desc": "a growing family of dreamers and builders."
 	},
 	"logoGallery": [
-		"./assets/featured/feat-logo-andela.svg",
-		"./assets/featured/feat-logo-flexport.svg",
-		"./assets/featured/feat-logo-lendup.svg",
-		"./assets/featured/feat-logo-periscope.svg",
-		"./assets/featured/feat-logo-robinhood.svg"
+		"./assets/featured/feat-logo-andela.png",
+		"./assets/featured/feat-logo-flexport.png",
+		"./assets/featured/feat-logo-lendup.png",
+		"./assets/featured/feat-logo-periscope.png",
+		"./assets/featured/feat-logo-robinhood.png"
 	],
 	"featured": [
 		{

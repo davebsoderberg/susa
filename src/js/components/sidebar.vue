@@ -57,8 +57,6 @@ module.exports = {
 		}
 
 		var that = this;
-		console.log(that);
-
 		if ( !this.isTouch ){
 			$(".sidebar-item a").click(function() {
 				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')

@@ -28,7 +28,6 @@ function getData(){
 		request.onload = function(e){
 			if (request.readyState === 4){
 				r = JSON.parse(request.responseText);
-				console.log(r[0]);
 				preloadImages(r[0].images);
 
 				window.Data = r[0];
@@ -101,10 +100,8 @@ function preloadImages(images) {
 			loaded++;
 			// console.log(this, total, loaded);
 			percentage = Math.floor( loaded/total * 100 );
-			console.log(percentage + "% loaded");
 
 			if ( percentage === 100 ){
-				console.log("speedup");
 				interval = 10;
 				initVue();
 			}

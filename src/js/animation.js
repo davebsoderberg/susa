@@ -36,8 +36,8 @@ var self = module.exports = {
 	},
 	curtainIn: function(){
 		self.curtainTL().to(".curtain", 0.8, { x: "100%", skewX: "-20deg", ease: Power2.easeInOut, onComplete: function(){
-				TweenMax.set(".curtain-container", {zIndex: -1})
-		}, oncompleteScope: this })
+				TweenMax.set(".curtain-container", {zIndex: "-1"})
+		}})
 			.to(".hero-image", 1, { opacity: 1 }, "-=0.3")
 			.to(".main-container", 1, { opacity: 1 }, "-=0.8");
 	},

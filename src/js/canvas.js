@@ -45,13 +45,17 @@ var self = module.exports = function(){
 		self.animationStop =  false;
 		self.initBlur = false;
 
-		self.imageHeroURL = "./assets/background.jpg";
+		self.imageHeroURL = "../assets/background.jpg";
 		self.imageSupURL = "./assets/manifest.jpg";
 		self.cloudImage = "./assets/clouds.png";
 
 		// Setup Hero Stage & Renderer
 		self._STAGE = new PIXI.Container( 0xFF0000 );
-		self._RENDERER = new PIXI.autoDetectRenderer( self._WIDTH, self._HEIGHT, { transparent: true } );
+		self._RENDERER = new PIXI.autoDetectRenderer( self._WIDTH, self._HEIGHT, { 
+			transparent: true
+		} );
+
+		console.log(self._RENDERER);
 
 		self._WRAPPER = document.getElementById("hero-container");
 		self._WRAPPER.appendChild( self._RENDERER.view );
@@ -283,25 +287,34 @@ var self = module.exports = function(){
 
 		logoImage.onload = function(){
 
-			that.logo = new PIXI.Sprite.fromImage(logoImage.src);
+			that.id = self.logoIndex;
+			that.logo = new PIXI.Sprite.fromImage(this.src);
 			that.logo.width = self.cW;
 			that.logo.height = self.cH;
 			that.logo.alpha = 0;
 
 			self._STAGE.addChild( that.logo );
+			self.logoCollection.push( that );
+
+			console.log(self.logoCollection);
+
+			self.logoIndex++;
 
 		};
+
 	};
 
 	LogoBox.prototype.animate = function(pos){
 
 		if ( this.logo === undefined ){ return; };
+
 		TweenMax.fromTo( this.logo.position, 0.6, { x: pos.x, y: pos.y + self.cW/4, }, {  y: pos.y, onComplete: function(){
 			TweenMax.to( this.logo.position, 1.2, { y: pos.y - self.cW/4, delay: 1.8 });
 		}, onCompleteScope: this });
 		TweenMax.to( this.logo, 0.6, { alpha: 1, onComplete: function(){
 			TweenMax.to( this.logo, 0.6, { alpha: 0, delay: 1.8 });
 		}, onCompleteScope: this });
+
 	};
 
 	function Square(i){
@@ -438,6 +451,8 @@ var self = module.exports = function(){
 
 			dataImage.onload = function(){
 
+				console.log("Crashes here?");
+
 				var srcImg = self.Utils.calculateSrcImage(dataImage);
 
 				self._ctx.drawImage(dataImage, srcImg.posX, srcImg.posY, srcImg.width, srcImg.height);
@@ -492,13 +507,9 @@ var self = module.exports = function(){
 
 		self.createLogos = function(){
 
-			var logo,
-				dot;
-
 			for ( var i = 0, len = self.logos.length; i < len; i++ ){
 
-				logo = new LogoBox(self.logos[i]);
-				self.logoCollection.push( logo );
+				new LogoBox(self.logos[i]);		
 
 			};
 
@@ -729,8 +740,9 @@ var self = module.exports = function(){
 		var dotsCollection = [ self.dots[index], self.dots[index+self.f_maxW], self.dots[index+self.f_maxW+1], self.dots[index+1] ];
 
 		var i = self.logoCollection[self.logoIndex];
-
 		i.animate(pos);
+
+		self.logoIndex++;
 
 		var b = new BoundingBox(dotsCollection);
 		b.animate();
@@ -748,8 +760,6 @@ var self = module.exports = function(){
 			animateCSSDot(delay);
 
 		};
-
-		self.logoIndex++;
 
 	};
 
@@ -812,12 +822,12 @@ var self = module.exports = function(){
 
 		if ( !self.Utils.isTouchDevice() ){
 			// resize( newWidth, newHeight );
-			location.reload();
+			window.location.href = window.location.href;
 		};
 
 		if ( self.Utils.isTouchDevice() && newWidth != self._WIDTH ){
  			// resize( newWidth, newHeight );
- 			location.reload();
+ 			window.location.href = window.location.href;
 		};
 
 	};
