@@ -807,18 +807,18 @@ var self = module.exports = function(){
 
 	function onWindowResize(){
 
-		location.reload();
+		var newWidth = (document.documentElement.clientWidth || window.innerWidth) * self._ratio,
+			newHeight = window.innerHeight * self._ratio;
 
-		// var newWidth = (document.documentElement.clientWidth || window.innerWidth) * self._ratio,
-		// 	newHeight = window.innerHeight * self._ratio;
+		if ( !self.Utils.isTouchDevice() ){
+			// resize( newWidth, newHeight );
+			location.reload();
+		};
 
-		// if ( !self.Utils.isTouchDevice() ){
-		// 	resize( newWidth, newHeight );
-		// };
-
-		// if ( self.Utils.isTouchDevice() && newWidth != self._WIDTH ){
- 	// 		resize( newWidth, newHeight );
-		// };
+		if ( self.Utils.isTouchDevice() && newWidth != self._WIDTH ){
+ 			// resize( newWidth, newHeight );
+ 			location.reload();
+		};
 
 	};
 
