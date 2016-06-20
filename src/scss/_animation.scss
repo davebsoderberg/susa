@@ -1,0 +1,54 @@
+// WOW.js Animations
+
+@media only screen 
+  and (min-width: 1280px) { 
+
+	.animated {
+		transition: all ease-in-out 1s;
+	}
+
+	.fadeIn {
+		opacity: 0;
+		transform: translate3d(0, 48px, 0);
+	}
+
+	.animated.fadeIn {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+
+	.slideIn {
+		opacity: 0;
+		transform: translate3d(24px, 0, 0);
+	}
+
+	.animated.slideIn {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+
+	.slideUp {
+		opacity: 0;
+		transform: translate3d(0, 48px, 0);
+	}
+
+	.animated.slideUp {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+
+	.svgIn {
+		.feature-icon .st0{
+			stroke-dasharray: 560px;
+			stroke-dashoffset: 560px;
+		}
+	}
+
+	.animated.svgIn {
+		.feature-icon .st0{
+			stroke-dashoffset: 0px;
+			transition: all ease-in-out 0.8s 0.5s;
+		}
+	}
+
+}

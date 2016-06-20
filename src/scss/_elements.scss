@@ -1,0 +1,396 @@
+// Elements
+
+.logo {
+	width: 40px;
+	height: 56px;
+	display: block;
+	position: fixed;
+	top: 56px;
+	left: 80px;
+	z-index: 64;
+	transition: fill ease-in-out 0.3s;
+	cursor: pointer;
+}
+
+.copyright {
+	width: 100%;
+	color: $muted;
+	margin: 120px auto 0 auto;
+	display: block;
+	text-align: center;
+}
+
+.date {
+	font-family: $decoration;
+	font-weight: 500;
+	font-size: 1.538em;
+	line-height: 1.5em;
+	color: $light;
+	position: fixed;
+	top: 56px;
+	right: 80px;
+	z-index: 64;
+	transition: color ease-in-out 0.3s;
+}
+
+.date-slash {
+	display: block;
+	text-align: center;
+}
+
+.bright-mode {
+	.date {
+		color: $prim;
+		transition: color ease-in-out 0.3s;
+	}
+}
+
+.dark-mode {
+	.logo {
+		fill: $light;
+		transition: fill ease-in-out 0.3s;
+	}
+	.data {
+		color: $light;
+		transition: color ease-in-out 0.3s;
+	}
+}
+
+.tag {
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	z-index: 12;
+}
+
+.side-quote {
+	margin: 142px 0 120px 72px;
+	position: relative;
+	font-family: $decoration;
+	font-size: 1.538em;
+	line-height: 1.600em;
+	color: $secn;
+	transform: translate3d(0, -24px, 0);
+}
+
+button {
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.view-icon {
+	width: 38px;
+	height: 38px;
+	display: inline-block;
+	line-height: 38px;
+	border: 1px solid $secn;
+	border-radius: 100%;
+	position: absolute;
+	top: 31px;
+	left: 32px;
+	
+	&:before {
+		content: "";
+		width: 1px;
+		height: 21px;
+		background: $secn;
+		display: block;
+		position: absolute;
+		top: 7px;
+		left: 18px;
+	}
+
+	&:after {
+		content: "";
+		width: 21px;
+		height: 1px;
+		background: $secn;
+		display: block;
+		position: absolute;
+		top: 17px;
+		left: 8px;
+	}
+
+}
+
+.btn-view-full {
+	font-size: 1.538em;
+	height: 38px;
+	color: $light;
+	font-weight: 700;
+	line-height: 38px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btn-view-section {
+	font-size: 1.538em;
+	height: 38px;
+	color: $light;
+	font-weight: 700;
+	line-height: 38px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+// Labels
+.label {
+	margin: 0 0 0 32px;
+
+	&:after {
+		content: "";
+		width: 40px;
+		height: 1px;
+		background: #FFFFFF;
+		display: inline-block;
+		margin: 0 16px;
+		vertical-align: middle;
+	}
+}
+
+.section-label {
+	// margin: 0 0 120px 0;
+
+	.label {
+		color: $prim;
+		margin: 0;
+
+		&:after {
+			background: $prim;
+		}
+
+	}
+
+	&.light {
+		.label {
+			color: $light;
+
+			&:after {
+				background: $light;
+			}
+
+		}
+	}
+
+}
+
+// Curtain
+.curtain-container {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.curtain {
+	width: 200vw;
+	height: 200vw;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: $prim;
+	transform: translate(-100%, 0) skewX(-20deg);
+	transform-origin: right top;
+}
+
+.hero-image {
+	position: absolute;
+	display: block;
+	background: url("../assets/hero.jpg") no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+// Scroll Animation
+.scroll-indicator {
+	position: absolute;
+	bottom: 56px;
+	left: 80px;
+	display: flex;
+	align-items: center;
+}
+
+.scroll-label {
+	font-family: $decoration;
+	font-size: 1.538em;
+	line-height: 1.600em;
+	color: $secn;
+	display: inline-block;
+}
+
+.scroll-bar {
+	height: 125px;
+	width: 16px;
+	display: inline-block;
+	margin: 0  0 0 40px;
+	position: relative;
+}
+
+.scroll-bar-top {
+	width: 1px;
+	height: 125px;
+	background: $light;
+	position: absolute;
+	top: 0;
+	left: 6px;
+	animation: scrollbar-t 2.4s infinite;
+	animation-timing-function: linear;
+}
+
+.scroll-bar-bottom {
+	width: 1px;
+	height: 0px;
+	position: absolute;
+	bottom: 0;
+	left: 6px;
+	background: $light;
+	animation: scrollbar-b 2.4s infinite;
+	animation-timing-function: linear;
+}
+
+.scroll-handle {
+	width: 13px;
+	height: 13px;
+	border: 1px solid $light;
+	border-radius: 100%;
+	animation: scrollbar-h 2.4s infinite;
+	animation-timing-function: linear;
+}
+
+// Social Items Team
+
+.social-icons {
+	display: block;
+	margin: 48px 0 0 0 ;
+}
+
+.icn-twitter {
+	background: url("../assets/social/icon-twitter.svg");
+	transition: all ease-in-out 0.3s;
+}
+
+.icn-linkedin {
+	background: url("../assets/social/icon-linkedin.svg");
+	transition: all ease-in-out 0.3s;
+}
+
+.social-icon {
+	width: 28px;
+	height: 28px;
+	display: block;
+	margin: 0 16px 0 0;
+}
+
+.social-icon-link {
+	display: inline-block;
+
+		&:hover {
+		.icn-twitter {
+			background: url("../assets/social/icon-twitter-hover.svg");
+			transition: all ease-in-out 0.3s;
+		}
+
+		.icn-linkedin {
+			background: url("../assets/social/icon-linkedin-hover.svg");
+			transition: all ease-in-out 0.3s;
+		}
+	}
+	
+}
+
+
+
+// Scrollbar top animation
+@keyframes scrollbar-t {
+  0%, 100% { height: 125px; }
+  10% { height: 125px; }
+  39%, 44% { height: 0px; }
+  60%, 99% { height: 125px; }
+}
+
+// // Scrollbar bottom animation
+
+@keyframes scrollbar-b {
+  0%, 100% { height: 0px; }
+  13% { height: 0px; }
+  42%, 44% { height: 125px; }
+  60%, 99% { height: 0px; }
+}
+
+@keyframes scrollbar-h {
+	0%, 100% { transform-origin: 50% 0%; transform: translate3d(0,125px,0) scale(0,0);  }
+	4%, 10% { transform-origin: 50% 0%; transform: translate3d(0,125px,0) scale(1,1);  }
+	42%, 76% { transform-origin: 50% 100%; transform: translate3d(0,-13px,0) scale(1,1);  }
+	80%, 99% { transform-origin: 50% 100%; transform: translate3d(0,-13px,0) scale(0,0);  }
+}
+
+@media only screen and ( max-width: 1024px ){
+	.logo {
+		top: 48px;
+		left: 48px;
+		position: absolute;
+	}
+	.date {
+		top: 48px;
+		right: 48px;
+		position: absolute;
+	}
+	.scroll-indicator {
+		bottom: 48px;
+		left: 48px;
+	}
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (max-width: 736px) { 
+	.logo {
+		top: 32px;
+		left: 32px;
+		position: absolute;
+	}
+	.date {
+		top: 32px;
+		right: 32px;
+		position: absolute;
+	}
+	.scroll-indicator {
+		bottom: 32px;
+		left: 32px;
+	}
+	.side-quote {
+		margin: 0 0 32% 0;
+	}
+	.tag {
+		position: initial;
+		display: block;
+	}
+}
+
+/* Landscape */
+@media only screen 
+  and (max-width: 736px) 
+  and (orientation: landscape) { 
+	.scroll-indicator {
+		display: none;
+	}
+}
