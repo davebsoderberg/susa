@@ -45,7 +45,7 @@ var self = module.exports = function(){
 		self.animationStop =  false;
 		self.initBlur = false;
 
-		self.imageHeroURL = "../assets/background.jpg";
+		self.imageHeroURL = "./assets/background.jpg";
 		self.imageSupURL = "./assets/manifest.jpg";
 		self.cloudImage = "./assets/clouds.png";
 
