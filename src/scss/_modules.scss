@@ -228,66 +228,17 @@
 /* ----------- iPhone 6+ ----------- */
 /* Portrait and Landscape */
 @media only screen 
-  and (max-width: 736px) {
+  and (max-width: 768px) {
 	.sidebar-container {
 		width: 94px;
 		transition: all ease-in-out 0.3s;
-		z-index: 160;
+		z-index: 64;
 	}
-
-	.sidebar-open {
-
-		.sidebar-container {
-			width: 100vw;
-			height: 100vh;
-			background: $prim;
-			transition: all ease-in-out 0.3s;
-		}
-
-		.sidebar {
-			width: 66.875%;
-			margin: 0 auto;
-			transition: all ease-in-out 0.3s 0.3s;
-		}
-
-		.sidebar-item {
-			height: 64px;
-			transition: all ease-in-out 0.3s;
-		}
-
-		.sidebar-number {
-			opacity: 1;
-			transform: translate3d(0, 0, 0);
-			transition: all ease-in-out 0.4s 0.4s;
-			color: $light;
-		}
-
-		.sidebar-dash {
-			width: 34px;
-			margin: 0;
-			background: $light;
-		}
-
-		.sidebar-label {
-			opacity: 1;
-			transition: all ease-in-out 0.4s 0.4s;
-			color: $light;
-		}
-
-		.sidebar-border {
-			width: 100%;
-			transition: all ease-in-out 0.4s 0.4s;
-		}
-	}
-
-	.sidebar, .sidebar-item, .sidebar-number, .sidebar-dash, .sidebar-label, .sidebar-border {
-			transition: all ease-in-out 0.3s;
-		}
 
 }
 
 @media only screen
-	and (min-width: 1024px) {
+	and (min-width: 1025px) {
 
 	.sidebar-container{
 
@@ -358,20 +309,87 @@
 
 }
 
-/* Portrait */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
+@media only screen
+	and (max-width: 1024px) {
+		.sidebar-open {
 
-}
+			.sidebar-container {
+				width: 96px;
+				background: none;
+				transition: all ease-in-out 0.3s;
+			}
 
-/* Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
+			.sidebar {
+				width: 100%;
+				margin: 0 auto;
+				transition: all ease-in-out 0.3s 0.3s;
+			}
 
-}
+			.sidebar-item {
+				height: 40px;
+				transition: all ease-in-out 0.3s;
+			}
+
+			.sidebar-number {
+				opacity: 0;
+				transform: translate3d(0, 0, 0);
+				transition: all ease-in-out 0.4s 0.4s;
+				color: $light;
+			}
+
+			.sidebar-dash {
+				width: 16px;
+				margin: 0 0 0 16px;
+				background: $light;
+				transition: all ease-in-out 0.3s;
+			}
+
+			.sidebar-label {
+				opacity: 1;
+				transition: all ease-in-out 0.4s 0.4s;
+				color: $light;
+			}
+
+			.sidebar-border {
+				width: 0%;
+				transition: all ease-in-out 0.4s 0.4s;
+			}
+		}
+
+		.sidebar-container {
+			width: 96px;
+			background: none;
+		}
+
+		.sidebar {
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		.sidebar-item {
+			height: 40px;
+		}
+
+		.sidebar-number {
+			opacity: 0;
+			transform: translate3d(0, 0, 0);
+		}
+
+		.sidebar-dash {
+			width: 16px;
+			margin: 0 0 0 16px;
+		}
+
+		.sidebar-label {
+			opacity: 1;
+		}
+
+		.sidebar-border {
+			width: 0%;
+		}
+
+		.sidebar, .sidebar-item, .sidebar-number, .sidebar-dash, .sidebar-label, .sidebar-border {
+			transition: all ease-in-out 0.3s;
+		}
+	}
+

@@ -1,6 +1,6 @@
 // Typography
 
-$decoration: "Quarto", Georgia, Times New Roman, sans-serif;
+$decoration: "ActaDisplay-Medium", Georgia, Times New Roman, sans-serif;
 
 .headline-big {
 	font-size: 9.846em;
@@ -25,6 +25,7 @@ $decoration: "Quarto", Georgia, Times New Roman, sans-serif;
 	line-height: 1.333em;
 	margin: 0.12em 0 0 0;
 	color: $light;
+	width: 77.777777778%
 }
 
 .subheadline {
@@ -62,6 +63,22 @@ $decoration: "Quarto", Georgia, Times New Roman, sans-serif;
 		content: close-quote;
 	}
 
+}
+
+.member-quote {
+	position: relative;
+	padding:  0 0 2em 0;
+	quotes: "“" "”" "‘" "’";
+
+	&:before {
+		content: open-quote;
+		position: absolute;
+		transform: translate(-120%, 0);
+	}
+
+	&:after {
+		content: close-quote;
+	}
 }
 
 .portfolio-copy {
@@ -130,14 +147,16 @@ $decoration: "Quarto", Georgia, Times New Roman, sans-serif;
 	color: $muted;
 }
 
+@media only screen and ( max-width: 1600px ) and ( min-width: 1281px ){
+	.headline, .quote, .manifest-headline {
+		font-size: 3.077em;
+	}
+}
+
 @media only screen and ( max-width: 1440px ){
 
 	.headline-big {
 		font-size: 7.385em;
-	}
-
-	.headline, .quote, .manifest-headline {
-		font-size: 3.077em;
 	}
 
 	.manifest-headline {
@@ -149,72 +168,31 @@ $decoration: "Quarto", Georgia, Times New Roman, sans-serif;
 	}
 }
 
-/* ----------- iPhone 4 and 4S ----------- */
-
-/* Portrait and Landscape */
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+	and ( max-width: 1380px ){
+		.subheadline {
+			min-height: 60px;
+		}
+	}
 
+@media only screen and ( max-width: 1279px ) and ( min-width: 769px ){
+	.headline, .quote, .manifest-headline {
+		font-size: 2.615em;
+	}
 }
 
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-}
-
-/* ----------- iPhone 6 ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-
-}
-
-/* ----------- iPhone 6+ ----------- */
-
-/* Portrait and Landscape */
 @media only screen 
   and (max-width: 736px) { 
 	.headline-big {
 		font-size: 4.154em;
 	}
 	.intro-copy, .headline, .quote, .manifest-headline {
-		font-size: 1.846em;
+		font-size: 1.538em;
 		line-height: 1.333em;
+	}
+
+	.intro-copy {
+		width: 100%;
 	}
 
 	.headline {
@@ -222,6 +200,7 @@ $decoration: "Quarto", Georgia, Times New Roman, sans-serif;
 	}
 
 	.author {
+		font-size: 1.231em;
 		display: block;
 		margin: 0 0 16% 0;
 	}
@@ -233,49 +212,8 @@ $decoration: "Quarto", Georgia, Times New Roman, sans-serif;
 	.filter-subheadline {
 		font-size: 1.077em;
 	}
-}
 
-/* Portrait */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-
-}
-
-/* ----------- iPhone 5 and 5S ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (max-width: 568px) {
-	.quote {
-		font-size: 1.538em;
+	.subheadline {
+		min-height: auto;
 	}
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
 }

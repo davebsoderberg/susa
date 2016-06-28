@@ -18,12 +18,12 @@
 		</ul>
 	</div>
 
-	<div id="full-portfolio-section" class="js fadeIn">
-		<button class="full-portfolio-section-inner" v-on:click="togglePortfolio">
+	<button id="full-portfolio-section" class="js fadeIn" v-on:click="togglePortfolio">
+		<span class="full-portfolio-section-inner">
 			<span class="btn-view-full">view full portfolio</span>
 			<div class="view-icon"></div>
-		</button>
-	</div>
+		</span>
+	</button>
 
 </template>
 
@@ -65,6 +65,9 @@ module.exports = {
 				if ( direction === "down" ){
 					$("body").addClass("bright-mode");
 				}
+			},
+			offset: function() {
+			    return this.element.clientHeight * 0.05;
 			}
 		});
 
@@ -82,7 +85,7 @@ module.exports = {
 				}
 			},
 			offset: function() {
-			    return this.element.clientHeight * 2.4
+			    return this.element.clientHeight * 2.4;
 			}
 		})
 
@@ -108,7 +111,7 @@ module.exports = {
 				}
 			},
 			offset: function() {
-			   	return -this.element.clientHeight
+			   	return -this.element.clientHeight;
 			}
 		})
 

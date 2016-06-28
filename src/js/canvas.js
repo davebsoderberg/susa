@@ -1,6 +1,7 @@
 // Main & Support Canvas
 var TimelineMax = require("./vendor/TimelineMax.min.js"),
 	TweenMax = require("./vendor/TweenMax.min.js"),
+	$ = require("jquery"),
 	PIXI = require("./vendor/pixi.min.js");
 
 var self = module.exports = function(){
@@ -296,8 +297,6 @@ var self = module.exports = function(){
 			self._STAGE.addChild( that.logo );
 			self.logoCollection.push( that );
 
-			console.log(self.logoCollection);
-
 			self.logoIndex++;
 
 		};
@@ -337,7 +336,7 @@ var self = module.exports = function(){
 
 		index = index || 0;
 
-		TweenMax.to( this.graphics, 0.2, { alpha: 1, delay: index * 0.1 });
+		TweenMax.to( this.graphics, 0.2, { alpha: 0.35, delay: index * 0.1 });
 	};
 
 	Square.prototype.fadeOut = function(index, duration){
@@ -603,7 +602,7 @@ var self = module.exports = function(){
 			for ( var i = 0; i < self.blurredSquareNum; i++ ){
 				var index = self.Utils.getRandomSquare();
 				var c = self.cubes[index];
-				c.graphics.alpha = 1;
+				c.graphics.alpha = 0.35;
 
 				self.squareCollection.push( index );
 			}
@@ -740,7 +739,9 @@ var self = module.exports = function(){
 		var dotsCollection = [ self.dots[index], self.dots[index+self.f_maxW], self.dots[index+self.f_maxW+1], self.dots[index+1] ];
 
 		var i = self.logoCollection[self.logoIndex];
-		i.animate(pos);
+		if ( i != undefined ){
+			i.animate(pos);
+		};		
 
 		self.logoIndex++;
 
@@ -755,7 +756,9 @@ var self = module.exports = function(){
 			var delay = 0.1 * i;			
 
 			var o = new OutlineDot();
-			o.animate(outlinePos);
+			if ( o != undefined ){
+				o.animate(outlinePos);
+			};
 
 			animateCSSDot(delay);
 
@@ -764,9 +767,8 @@ var self = module.exports = function(){
 	};
 
 	self.showSquares = function(delay){
-
 		for ( var i = 0, len = self.squareCollection.length; i < len; i++ ){
-			if ( self.squareCollection[i] ) { return };
+			if ( self.cubes[ self.squareCollection[i] ] === undefined ) { return };
 			self.cubes[ self.squareCollection[i] ].fadeIn(i);
 		}
 
@@ -774,8 +776,9 @@ var self = module.exports = function(){
 
 	self.hideSquares = function(delay){
 		for ( var i = 0, len = self.squareCollection.length; i < len; i++ ){
+			if ( self.cubes[ self.squareCollection[i] ] === undefined ){ return }; 
 			self.cubes[ self.squareCollection[i] ].fadeOut(i, delay);
-		}
+		};
 	};
 
 	var dt,
@@ -802,7 +805,7 @@ var self = module.exports = function(){
 
 	function resize( newWidth, newHeight){
 		self.animateionStop = true;
-		setTimeout(function(){ self.animateionStop = false; }, 500);
+		setTimeout(function(){ self.animationStop = false; }, 500);
 
 		self._WIDTH = newWidth;
 		self._HEIGHT = newHeight;
@@ -813,21 +816,25 @@ var self = module.exports = function(){
 		self._RENDERER.resize( self._WIDTH, self._HEIGHT );
 
 		self.recreateElement();
+		$(document.body).trigger("sticky_kit:recalc");
 	}
 
 	function onWindowResize(){
+
+		self._ratio = self.Utils.getRatio();
+		self._extra = self._ratio >= 2 ? 0 : 1;
 
 		var newWidth = (document.documentElement.clientWidth || window.innerWidth) * self._ratio,
 			newHeight = window.innerHeight * self._ratio;
 
 		if ( !self.Utils.isTouchDevice() ){
-			// resize( newWidth, newHeight );
-			window.location.href = window.location.href;
+			resize( newWidth, newHeight );
+			// window.location.href = window.location.href;
 		};
 
 		if ( self.Utils.isTouchDevice() && newWidth != self._WIDTH ){
- 			// resize( newWidth, newHeight );
- 			window.location.href = window.location.href;
+ 			resize( newWidth, newHeight );
+ 			// window.location.href = window.location.href;
 		};
 
 	};

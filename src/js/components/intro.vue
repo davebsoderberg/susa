@@ -2,8 +2,8 @@
 
 	<div class="intro-container c-10">
 		<div class="intro-headline">
-			<h1 class="headline-big"> {{ intro.title }} </h1>
-			<p class="intro-copy" :class="{ 'c-14': !isTouch, 'c-18': isTouch }"> {{ intro.desc }} </p>
+			<h1 class="headline-big">{{ intro.title }}</h1>
+			<p class="intro-copy"> {{ intro.desc }} </p>
 		</div>
 	</div>
 	<div class="scroll-indicator">
@@ -36,28 +36,66 @@
 		ready: function(){
 
 			var label = document.querySelector(".scroll-label");
+			var headline = document.querySelector(".headline-big");
+			var copy = document.querySelector(".intro-copy");
 
 			if ( this.isTouch ){
 				label.innerHTML = "begin </br> swiping";
+			} else  {
+				changeCopy();
 			};
+
+			var duration = 0.8,
+				scrollHandle = document.querySelector(".scroll-handle");
+
+			var timeline = new TimelineMax({ repeat:-1,repeatDelay: duration/2 * 8 });
+			timeline.set(".scroll-handle", { z: 0.0001, y: "118px", scale: 0 })
+				.set(".scroll-bar-top", { height: "125px"})
+				.to(".scroll-handle", duration/2, { scale: 1}, "syncOne")
+				.to(".scroll-bar-top", duration/2, { height: "118px"}, "syncOne")
+				.to(".scroll-handle", duration, {  y: "-7px"}, "syncTwo")
+				.to(".scroll-bar-bottom", duration, { bottom: 0, height: "118px", delay: 0.0132}, "syncTwo")
+				.to(".scroll-bar-top", duration - 0.1, { height: "0px" , delay: 0.0135}, "syncTwo")
+				.to(".scroll-handle", duration/2, {  scale: 0, delay: 0.6 }, "syncThree")
+				.to(".scroll-bar-bottom", duration/2, { height: "125px", delay: 0.6}, "syncThree");
+
+			// 			var timeline = new TimelineMax({ repeat:-1,repeatDelay: duration/2 });
+			// timeline.set(".scroll-handle", { z: 0.0001, y: "125px", scale: 0, transformOrigin: "50% 0%"})
+			// 	.to(".scroll-handle", duration/2, { scale: 1})
+			// 	.to(".scroll-bar-top", duration, { height: "-13px", easing: Power2.easeOut }, "sync")
+			// 	.fromTo(".scroll-bar-bottom", duration, { y: "13px" }, { y: 0,  height: "125px", easing: Power2.easeOut }, "sync")
+			// 	.to(".scroll-handle", duration, { y: "-13px", easing: Power2.easeOut }, "sync")
+			// 	.set(".scroll-handle", { transformOrigin: "50% 100%" })
+			// 	.to(".scroll-handle", duration/2, { transformOrigin: "50% 100%", scale: 0, delay: 0.3, easing: Power4.easeIn });
+
+
+			function changeCopy(){
+				// Force linebreak headline
+				var desktopHeadline = headline.innerHTML,
+					wordPos = desktopHeadline.search('susa');
+
+				var newDesktopString = desktopHeadline.slice(0, wordPos) + "</br>" + desktopHeadline.slice(wordPos);
+				
+				headline.innerHTML = newDesktopString;
+			}
+
+
 
 			// Intro
 			var introWaypoint = new Waypoint({
 				element: document.getElementById("section-intro"),
 				handler: function(direction){
 					if ( direction === "up"){
-						console.log("intro in");
 						Animations.curtainIn();
 						Animations.portfolioOut();
 						Animations.scrollIndicatorShow();
 						if ( !Canvas.Utils.isTouchDevice() ){
-							$("body").addClass("sidebar-open");
 							Canvas.hideSquares(1);
 						};
 						Canvas.animationStop = false;
+						$("body").addClass("sidebar-open");
 						$("body").removeClass("bright-mode dark-mode");
 						$(".sidebar-item").removeClass("sidebar-active");
-						// window.location.hash = "";
 					};
 				},
 				offset: function(){
@@ -69,11 +107,12 @@
 				element: document.getElementById("section-intro"),
 				handler: function(direction){
 					if ( direction === "down"){
-						console.log("pixels triggered");
 						Canvas.showSquares();
 					};
 				},
-				offset: "-16%"
+				offset: function(){
+					return -this.element.clientHeight * 0.16;
+				}
 			});
 
 		}

@@ -11,16 +11,17 @@
 				<div class="member-info">
 					<div class="section-label js fadeIn" v-if=" $index === 0"><span class="label">c.</span>team</div>
 					<h2 class="headline">{{ member.name }}  </h2>
+					<p class="copy member-quote"> {{member.quote}} </p>
 					<p class="copy"> {{member.desc}} </p>
 					<ul class="social-icons">
 						<li class="social-icon-link" v-for="icon in member.social">
-							<a href="icon.url" target="_blank" class="social-icon" :class=" 'icn-' + icon.label "></a>
+							<a :href="icon.url" target="_blank" class="social-icon" :class=" 'icn-' + icon.label "></a>
 						</li>
 					</ul>
 				</div>
 			</div> <!-- end of i-6 -->
 			<div class="i-9 full-height">
-				<div class="member-portrait" :style="{ 'background': 'url(' + member.image + ') no-repeat', 'background-size': 'cover' }"></div>
+				<div class="member-portrait" :style="{ 'background': 'url(' + member.image + ') no-repeat center center', 'background-size': 'cover' }"></div>
 			</div> <!-- end of i-9 -->
 		</li> <!-- end of member -->
 	</ul> <!-- end of member-list -->
@@ -47,7 +48,6 @@ module.exports = {
 			element: document.getElementById("section-pedigree"),
 			handler: function(direction){
 				if ( direction === "down" ){
-					console.log("pedigree triggered");
 					$("body").removeClass("bright-mode dark-mode");
 					$("body").addClass("bright-mode");
 					$(".sidebar-item").removeClass("sidebar-active");

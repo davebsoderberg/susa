@@ -52,9 +52,9 @@ module.exports = {
 		}
 	},
 	ready: function(){
-		if ( Canvas.Utils.isTouchDevice() ){
-			$("body").removeClass("sidebar-open");
-		}
+		// if ( Canvas.Utils.isTouchDevice() || window.innerWidth < 1025){
+		// 	$("body").removeClass("sidebar-open");
+		// }
 
 		var that = this;
 		if ( !this.isTouch ){

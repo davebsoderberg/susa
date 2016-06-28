@@ -252,19 +252,19 @@ button {
 	position: absolute;
 	top: 0;
 	left: 6px;
-	animation: scrollbar-t 2.4s infinite;
-	animation-timing-function: linear;
+	// animation: scrollbar-t 2.4s infinite;
+	// animation-timing-function: linear;
 }
 
 .scroll-bar-bottom {
 	width: 1px;
 	height: 0px;
 	position: absolute;
-	bottom: 0;
+	bottom: 7px;
 	left: 6px;
 	background: $light;
-	animation: scrollbar-b 2.4s infinite;
-	animation-timing-function: linear;
+	// animation: scrollbar-b 2.4s infinite;
+	// animation-timing-function: linear;
 }
 
 .scroll-handle {
@@ -272,15 +272,17 @@ button {
 	height: 13px;
 	border: 1px solid $light;
 	border-radius: 100%;
-	animation: scrollbar-h 2.4s infinite;
-	animation-timing-function: linear;
+	transform-origin: 50% 50%;
+	// animation: scrollbar-h 2.4s infinite;
+	// animation-timing-function: linear;
 }
 
 // Social Items Team
 
 .social-icons {
 	display: block;
-	margin: 48px 0 0 0 ;
+	margin: 48px 0 0 0;
+	cursor: pointer;
 }
 
 .icn-twitter {
@@ -292,6 +294,12 @@ button {
 	background: url("../assets/social/icon-linkedin.svg");
 	transition: all ease-in-out 0.3s;
 }
+
+.icn-other {
+	background: url("../assets/social/icon-other.svg");
+	transition: all ease-in-out 0.3s;
+}
+
 
 .social-icon {
 	width: 28px;
@@ -313,6 +321,11 @@ button {
 			background: url("../assets/social/icon-linkedin-hover.svg");
 			transition: all ease-in-out 0.3s;
 		}
+
+		.icn-other {
+			background: url("../assets/social/icon-other-hover.svg");
+			transition: all ease-in-out 0.3s;
+		}
 	}
 	
 }
@@ -320,30 +333,30 @@ button {
 
 
 // Scrollbar top animation
-@keyframes scrollbar-t {
-  0%, 100% { height: 125px; }
-  10% { height: 125px; }
-  39%, 44% { height: 0px; }
-  60%, 99% { height: 125px; }
-}
+// @keyframes scrollbar-t {
+//   0%, 100% { height: 125px; }
+//   10% { height: 125px; }
+//   39%, 44% { height: 0px; }
+//   60%, 99% { height: 125px; }
+// }
 
-// // Scrollbar bottom animation
+// // // Scrollbar bottom animation
 
-@keyframes scrollbar-b {
-  0%, 100% { height: 0px; }
-  13% { height: 0px; }
-  42%, 44% { height: 125px; }
-  60%, 99% { height: 0px; }
-}
+// @keyframes scrollbar-b {
+//   0%, 100% { height: 0px; }
+//   13% { height: 0px; }
+//   42%, 44% { height: 125px; }
+//   60%, 99% { height: 0px; }
+// }
 
-@keyframes scrollbar-h {
-	0%, 100% { transform-origin: 50% 0%; transform: translate3d(0,125px,0) scale(0,0);  }
-	4%, 10% { transform-origin: 50% 0%; transform: translate3d(0,125px,0) scale(1,1);  }
-	42%, 76% { transform-origin: 50% 100%; transform: translate3d(0,-13px,0) scale(1,1);  }
-	80%, 99% { transform-origin: 50% 100%; transform: translate3d(0,-13px,0) scale(0,0);  }
-}
+// @keyframes scrollbar-h {
+// 	0%, 100% { transform-origin: 50% 0%; transform: translate3d(0,125px,0) scale(0,0);  }
+// 	4%, 10% { transform-origin: 50% 0%; transform: translate3d(0,125px,0) scale(1,1);  }
+// 	42%, 76% { transform-origin: 50% 100%; transform: translate3d(0,-13px,0) scale(1,1);  }
+// 	80%, 99% { transform-origin: 50% 100%; transform: translate3d(0,-13px,0) scale(0,0);  }
+// }
 
-@media only screen and ( max-width: 1024px ){
+@media only screen and ( max-width: 1025px ){
 	.logo {
 		top: 48px;
 		left: 48px;
@@ -357,6 +370,9 @@ button {
 	.scroll-indicator {
 		bottom: 48px;
 		left: 48px;
+	}
+	.side-quote {
+		display: none;
 	}
 }
 
@@ -379,6 +395,7 @@ button {
 	}
 	.side-quote {
 		margin: 0 0 32% 0;
+		display: none;
 	}
 	.tag {
 		position: initial;

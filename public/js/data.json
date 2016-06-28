@@ -15,23 +15,8 @@
 		"./assets/featured/feat-logo-andela.png",
 		"./assets/featured/feat-logo-flexport.png",
 		"./assets/featured/feat-logo-lendup.png",
-		"./assets/featured/feat-logo-periscope.png",
-		"./assets/featured/feat-logo-robinhood.png",
-		"./assets/portfolio/logo-andela.svg",
-		"./assets/portfolio/logo-bright.svg",
-		"./assets/portfolio/logo-captain401.svg",
-		"./assets/portfolio/logo-declara.svg",
-		"./assets/portfolio/logo-flexport.svg",
-		"./assets/portfolio/logo-hodinkee.svg",
-		"./assets/portfolio/logo-lendup.svg",
-		"./assets/portfolio/logo-modsy.svg",
-		"./assets/portfolio/logo-periscope.svg",
-		"./assets/portfolio/logo-pipelineDB.svg",
-		"./assets/portfolio/logo-qadium.svg",
-		"./assets/portfolio/logo-rigetti.svg",
-		"./assets/portfolio/logo-robinhood.svg",
-		"./assets/portfolio/logo-scalyr.svg",
-		"./assets/portfolio/logo-vurb.svg"
+		"./assets/featured/feat-logo-qadium.png",
+		"./assets/featured/feat-logo-robinhood.png"
 	],
 	"intro" : {
 		"title": "we are susa ventures.",
@@ -41,54 +26,49 @@
 		"./assets/featured/feat-logo-andela.png",
 		"./assets/featured/feat-logo-flexport.png",
 		"./assets/featured/feat-logo-lendup.png",
-		"./assets/featured/feat-logo-periscope.png",
-		"./assets/featured/feat-logo-robinhood.png"
+		"./assets/featured/feat-logo-robinhood.png",
+		"./assets/featured/feat-logo-qadium.png"
 	],
 	"featured": [
 		{
 			"name": "Andela.",
-			"logo": "./assets/featured/feat-logo-andela.svg",
 			"quote": "Andela is building a for-profit company with the mission to train 10k developers on the continent of Africa over the next decade. We have no doubt they will fundamentally change the fabric of the African continent as well as the world.",
 			"author": "Chad Byers, Partner, Susa Ventures"
 		}, {
 			"name": "Flexport.",
-			"logo": "./assets/featured/feat-logo-flexport.svg",
 			"quote": "Flexport is re-inventing freight forwarders totally automating logistics with software for ocean and air freight giving companies full control over their entire supply chain.",
 			"author": "Seth Berman, Partner, Susa Ventures"
 		}, {
 			"name": "LendUp.",
-			"logo": "./assets/featured/feat-logo-lendup.svg",
 			"quote": "LendUp’s mission is to expand access to credit and lower the cost of borrowing for the millions of Americans that traditional banks are typically unable to serve.",
-			"author": "Chad Byers, Partner, Susa Ventures"
-		}, {
-			"name": "Periscope.",
-			"logo": "./assets/featured/feat-logo-periscope.svg",
-			"quote": "Periscope is building the fastest, most powerful tools for technical data analysts. There are many tools that empower anyone to do basic data analyses, but Periscope is unique in offering power tools for power users.",
 			"author": "Leo Polovets, Partner, Susa Ventures"
 		}, {
+			"name": "Qadium.",
+			"quote": "Qadium’s organizes and indexes information on all devices connected to the public internet. Think Google Maps for any enterprise or government networks surfacing relationships between them and their connected devices",
+			"author": "Seth Berman, Partner, Susa Ventures"
+		}, {
 			"name": "Robinhood.",
-			"logo": "./assets/featured/feat-logo-robinhood.svg",
 			"quote": "Robinhood is reimagining financial products in a mobile world, starting with brokerage, and is quickly becoming the portal by which an entire generation learns about investing.",
 			"author": "Chad Byers, Partner, Susa Ventures"
 		}
 	],
 	"thesis": {
-		"desc": "We believe strong competitive moats are fundamental to building a massive business. We seek out highly defensible businesses that leverage data, economies of scale, or network effects to build value and achieve longevity. We want to lead. We want to be the first check in. We want to help close your round. We want to be the most helpful investor on your cap table. We think of our portfolio as a family where everyone helps each other and benefits from the family's collective experience.",
+		"desc": "We believe strong competitive moats are fundamental to building a thriving business. We seek out highly defensible companies that leverage data, economies of scale, or network effects to build value and achieve longevity. From the first check in to helping close your round, we strive to be the most supportive investor on your cap table. Susa Ventures is a family, where each member benefits from the family’s collective experience.",
 		"chapters": [
 			{
 				"title": "Qualities of our family.",
 				"bullets": [
 					{
-						"headline": "Defensible",
-						"copy": "We partner with companies that can build useful products and establish a moat that helps them triumph over  future competitors.",
+						"headline": "defensible",
+						"copy": "We invest in founders and companies that are building competitive moats using data, network effects and/or economies of scale.",
 						"icon": "./assets/icons/icon-defensible.svg"
 					}, {
-						"headline": "Technical",
-						"copy": "We look for founders that can build robust, useful products that provide delightful experiences for their users. At least one founder on the team should be deeply technical, especially if the product requires specialized technologies like machine learning or natural language processing.",
+						"headline": "technical",
+						"copy": "We invest with technical founders. There is too much risk in relying on external teams to guide product and engineering.",
 						"icon": "./assets/icons/icon-technical.svg"
 					}, {
-						"headline": "Self-aware and eager to improve",
-						"copy": "We love working with people who understand their strengths and their weaknesses. We won’t interrupt you when you’re showcasing your strengths, and we’ll try to help with connections, knowledge, and support to help plug gaps in your skillset.",
+						"headline": "confident yet humble",
+						"copy": "We love to work with founders who are confident in their abilities, but humble enough to know their weaknesses. Self-aware founders hire the best teams around them.",
 						"icon": "./assets/icons/icon-self-aware.svg"
 					}
 
@@ -97,16 +77,16 @@
 				"title": "What we provide.",
 				"bullets": [
 					{
-						"headline": "High bandwidth",
-						"copy": "With three full time partners, we have more time per portfolio company than funds of our size.",
+						"headline": "high bandwidth",
+						"copy": "We strive to have no more than 10 portfolio companies per partner to ensure we can be highly involved in every business. We want to the be the first call when you need help and have the bandwidth to dig in at the speed that startups move.",
 						"icon": "./assets/icons/icon-high-bandwidth.svg"
 					}, {
-						"headline": "Strategic and tactical support",
-						"copy": "We love brainstorming about high-level topics like pricing strategies and product roadmaps, but we’re also not afraid to roll up our sleeves and be the first test user for your new API, or the copy editor for your website relaunch, or the first line of feedback for your Series A pitch deck.",
+						"headline": "strategic and tactical",
+						"copy": "We love the high level stuff as much as any other VC, but we prefer digging in on tactical stuff. Whether it’s testing out your API, or providing feedback on website copy, we love to get in the weeds.",
 						"icon": "./assets/icons/icon-strategic.svg"
 					}, {
-						"headline": "Supportive relationship",
-						"copy": "We’re fully committed to your company’s success. We won’t judge you, tell you what to do, or waste your time. We see our role as a dedicated employee, not an overbearing boss.",
+						"headline": "family",
+						"copy": "We think of our fund as a startup, and in that way, we are your peer. Our product is the Susa Family, and our focus is to build better ways for everyone in the family to connect, share and learn from each other.",
 						"icon": "./assets/icons/icon-supportive.svg"
 					}
 
@@ -114,7 +94,7 @@
 			}
 		],
 		"manifest": {
-			"copy": "Susa is a large family of mountain gorillas in the Virunga National Park in Rwanda. Only a few thousand people see this group in the wild each year. Coincidentally, on three separate trips, Chad, Seth, and Leo had independently taken the Susa trek. They loved the metaphor of a VC firm and its portfolio being like a gorilla troop; A close-knit family that can depend on each other for anything."
+			"copy": "Susa is a large family of mountain gorillas in the Virunga National Park in Rwanda. Only a few thousand people see this group in the wild each year. Coincidentally, on three separate trips, Chad, Seth, and Leo had independently visited this family. They loved the metaphor of a VC firm and its portfolio being like a family; a close-knit community that can depend on each other for anything."
 		}
 	},
 	"portfolioFilter": [
@@ -146,7 +126,7 @@
 			"name": "Casetext",
 			"desc": "Casetext allows lawyers to research and annotate cases, creating a high quality, low cost legal knowledge base.",
 			"url": "https://casetext.com/",
-			"logo": "",
+			"logo": "./assets/portfolio/logo-casetext.svg",
 			"tag": "fundTwo"
 		}, {
 			"name": "Declara",
@@ -170,7 +150,8 @@
 			"name": "FoxCommerce",
 			"desc": "Fox Commerce is reinventing the ways brand and retailers run their businesses online, allowing anyone to set up and create an online store with powerful social, mobile, and payment features.",
 			"url": "http://foxcommerce.com/",
-			"logo": ""
+			"logo": "./assets/portfolio/logo-fox-commerce.svg",
+			"tag": "fundOne"
 		}, {
 			"name": "GraphSQL",
 			"desc": "GraphSQL is a real­-time graph database and analytics technology. It’s used for applications in fraud detection, financial risk analysis, and purchase intent analytics.",
@@ -193,37 +174,43 @@
 			"name": "Lyst",
 			"desc": "Lyst is one of the world’s largest fashion marketplaces. They partner directly with brands and multi-brand stores to deliver a personalized shopping experience for consumers.",
 			"url": "https://www.lyst.com/",
-			"logo": "",
+			"logo": "./assets/portfolio/logo-lyst.svg",
 			"tag": "fundOne"
 		}, {
 			"name": "Mashgin",
 			"desc": "Mashgin is building self-checkout kiosks that use machine vision to let people check out at cafeterias and convenience stores without the need for a human clerk.",
 			"url": "http://mashgin.com/",
-			"logo": "",
-			"tag": "fundOne"
-		}, {
-			"name": "Mux",
-			"desc": "Mux is a video platform for content producers that offers actionable analytics on video quality and user playback experience.",
-			"url": "http://www.mux.com/",
-			"logo": "",
-			"tag": "fundOne"
-		}, {
-			"name": "Outlier",
-			"desc": "Outlier is a SaaS tool that helps companies become more data-driven. It analyzes data from existing analytics solutions like Flurry and Mixpanel, and then notifies users about interesting trends and unusual events.",
-			"url": "http://outlier.ai/",
-			"logo": "",
-			"tag": "fundOne"
-		}, {
-			"name": "Pachyderm",
-			"desc": "Pachyderm is an open source analytics engine that uses Docker containers for distributed analytics computations.",
-			"url": "http://www.pachyderm.io/",
-			"logo": "",
+			"logo": "./assets/portfolio/logo-mashgin.svg",
 			"tag": "fundOne"
 		}, {
 			"name": "Modsy",
 			"desc": "Modsy lets consumers get incredibly realistic renderings of furniture in their spaces by simply taking photos of their rooms and submitting them along with the rooms’ dimensions. Modsy enables consumers to virtually try out different furniture and room layouts, and to easily make purchasing decisions.",
 			"url": "https://www.modsy.com/",
 			"logo": "./assets/portfolio/logo-modsy.svg",
+			"tag": "fundOne"
+		}, {
+			"name": "Mux",
+			"desc": "Mux is a video platform for content producers that offers actionable analytics on video quality and user playback experience.",
+			"url": "http://www.mux.com/",
+			"logo": "./assets/portfolio/logo-mux.svg",
+			"tag": "fundOne"
+		}, {
+			"name": "Namo Media",
+			"desc": "Namo Media offered an SDK for native mobile advertising. They were acquired by Twitter in 2014.",
+			"url": "http://www.namomedia.com/",
+			"logo": "./assets/portfolio/logo-nanomedia.svg",
+			"tag": "fundOne"
+		}, {
+			"name": "Outlier",
+			"desc": "Outlier is a SaaS tool that helps companies become more data-driven. It analyzes data from existing analytics solutions like Flurry and Mixpanel, and then notifies users about interesting trends and unusual events.",
+			"url": "http://outlier.ai/",
+			"logo": "./assets/portfolio/logo-outlier.svg",
+			"tag": "fundOne"
+		}, {
+			"name": "Pachyderm",
+			"desc": "Pachyderm is an open source analytics engine that uses Docker containers for distributed analytics computations.",
+			"url": "http://www.pachyderm.io/",
+			"logo": "./assets/portfolio/logo-pachyderm.svg",
 			"tag": "fundOne"
 		}, {
 			"name": "Periscope Data",
@@ -241,13 +228,13 @@
 			"name": "Plan",
 			"desc": "Plan is a web and mobile app that combines your calendar with your task list in order to help you spend your time more efficiently.",
 			"url": "https://www.getplan.co/login",
-			"logo": "",
+			"logo": "./assets/portfolio/logo-plan.svg",
 			"tag": "fundOne"
 		}, {
 			"name": "PolicyGenius",
 			"desc": "PolicyGenius makes it easy to shop for all of your insurance needs, starting with life and disability insurance.",
 			"url": "https://www.policygenius.com",
-			"logo": "",
+			"logo": "./assets/portfolio/logo-policy-genius.svg",
 			"tag": "fundOne"
 		}, {
 			"name": "Qadium",
@@ -259,7 +246,7 @@
 			"name": "Remedy Labs",
 			"desc": "Remedy helps Americans better understand and reconcile their medical bills and claims -- ultimately helping to catch billing errors and provide savings for families and individuals.",
 			"url": "https://www.tryremedy.com/",
-			"logo": "",
+			"logo": "./assets/portfolio/logo-remedy.svg",
 			"tag": "fundOne"
 		}, {
 			"name": "Rigetti",
@@ -274,6 +261,12 @@
 			"logo": "./assets/portfolio/logo-robinhood.svg",
 			"tag": "fundOne"
 		}, {
+			"name": "Rockbot",
+			"desc": "Rockbot is an audio and video entertainment platform for retail locations.",
+			"url": "https://rockbot.com/",
+			"logo": "./assets/portfolio/logo-rockbot.svg",
+			"tag": "fundOne"
+		}, {
 			"name": "Scalyr",
 			"desc": "Scalyr is a modern, lightning-fast server log monitoring tool.",
 			"url": "http://www.scalyr.com/",
@@ -283,25 +276,31 @@
 			"name": "Scope AR",
 			"desc": "Scope AR provides augmented reality products for training and remote assistance in industrial settings.",
 			"url": "http://www.scopear.com/",
-			"logo": "",
+			"logo": "./assets/portfolio/logo-scope-ar.svg",
 			"tag": "fundOne"
 		}, {
 			"name": "SimpleLegal",
 			"desc": "SimpleLegal helps corporate general counsel and legal ops teams manage their legal billing.",
 			"url": "https://www.simplelegal.com",
-			"logo": "",
+			"logo": "./assets/portfolio/logo-simple-legal.svg",
+			"tag": "fundOne"
+		}, {
+			"name": "Standard Treasury",
+			"desc": "Standard Treasury offered standard APIs that facilitate businesses in transfers and other transactions with banks. They were acquired by Silicon Valley Bank in 2015.",
+			"url": "https://www.crunchbase.com/organization/standard-treasury",
+			"logo": "./assets/portfolio/logo-standard-treasury.svg",
+			"tag": "fundOne"
+		}, {
+			"name": "Trend MD",
+			"desc": "TrendMD is a research article recommendation service that helps journals increase their readership while helping researchers find the content they need.",
+			"url": "https://www.trendmd.com/",
+			"logo": "./assets/portfolio/logo-trendmd.svg",
 			"tag": "fundOne"
 		}, {
 			"name": "Vurb",
 			"desc": "Vurb is a search app that lets you easily find, share, and do the best things by connecting community insights, rich content, and useful services -- in one simple app.",
 			"url": "https://www.vurb.com/",
 			"logo": "./assets/portfolio/logo-vurb.svg",
-			"tag": "fundOne"
-		}, {
-			"name": "Trend MD",
-			"desc": "TrendMD is a research article recommendation service that helps journals increase their readership while helping researchers find the content they need.",
-			"url": "https://www.trendmd.com/",
-			"logo": "",
 			"tag": "fundOne"
 		}, {
 			"name": "Whisper",
@@ -313,68 +312,61 @@
 			"name": "Zephyr Health",
 			"desc": "Zephyr Health organizes health data from many public and private sources, then helps healthcare companies visualize that data and get insights that will help them reach people in need of care.",
 			"url": "https://zephyrhealth.com/",
-			"logo": "",
-			"tag": "fundOne"
-		}, {
-			"name": "Rockbot",
-			"desc": "Rockbot is an audio and video entertainment platform for retail locations.",
-			"url": "https://rockbot.com/",
-			"logo": "",
-			"tag": "fundOne"
-		}, {
-			"name": "Bonafide",
-			"desc": "Bonafide is a shared, intelligent address book for sales teams.",
-			"url": "https://bonafide.co/",
-			"logo": "",
-			"tag": "fundOne"
-		}, {
-			"name": "People.co",
-			"desc": "People.co built products to make campus tech recruiting more efficient.",
-			"url": "https://people.co",
-			"logo": "",
+			"logo": "./assets/portfolio/logo-zephyr.svg",
 			"tag": "fundOne"
 		}
 	],
 	"team": [
 		{
 			"name": "Chad Byers.",
+			"quote": "When I was graduating college, a mentor told me to find a job that didn’t feel like a job. Venture Capital is that job for me. I wake up every day excited to work with amazing founders.", 
 			"desc": "Chad is a co-founder and General Partner at Susa Ventures where he focuses on investments in enterprise software, fintech, and healthcare. Prior to Susa Ventures, Chad spent time at Integrate and Silver Spring Networks (SSNI) in various marketing and product management roles. He is also an angel investor in over 30+ companies including LearnUp, Tradesy, Womply, and Transcriptic. Chad chased his love for skiing, mountains and the outdoors to Boulder, Colorado where he graduated in 2009 with a degree in Environmental Science.",
 			"image": "./assets/team/chad_byers.jpg",
 			"social": [
 				{
+					"label": "twitter",
+					"image": "./assets/social/icon-twitter.svg",
+					"url": "https://twitter.com/chadbyers"
+				}, {
 					"label": "linkedin",
 					"image": "./assets/social/icon-linkedin.svg",
-					"url": "http://linkedin.com"
+					"url": "https://www.linkedin.com/in/chadabyers"
 				}
 			]
 		},	{
 			"name": "Leo Polovets.",
+			"quote": "After working at Google and two early-stage startups as a software engineer, I decided to focus on learning about building successful businesses from the VC side. I love working with smart, passionate founders; helping them wherever possible; and sharing lessons and knowledge within the Susa family", 
 			"desc": "Leo is a co-founder and General Partner at Susa Ventures. Prior to Susa, Leo was one of the first engineers at LinkedIn in 2003, then worked on payment fraud detection at Google, then designed and built the data cleaning and deduping engines at Factual. He is an angel investor in over a dozen companies, including DataFox, Boomtrain, Lumoid, and Momentum Machines. Leo holds a BS with Honors degree from Caltech, and in 2002, he was one of three members of Caltech's world finalist ACM International Programming Contest team. As one founder put it, Leo is a nerd’s nerd. In his spare time, he enjoying reading, writing, programming, and spending time with his wife. ",
 			"image": "./assets/team/leo_polovets.jpg",
 			"social": [
 				{
 					"label": "twitter",
 					"image": "./assets/social/icon-twitter.svg",
-					"url": "http://twitter.com"
+					"url": "https://twitter.com/lpolovets"
 				}, {
 					"label": "linkedin",
 					"image": "./assets/social/icon-linkedin.svg",
-					"url": "http://linkedin.com"
+					"url": "https://www.linkedin.com/in/lpolovets"
+				}, {
+					"label": "other",
+					"image": "./assets/social/icon-other.svg",
+					"url": "http://codingvc.com/"
 				}
 			]
 		},	{
 			"name": "Seth Berman.",
-			"desc": "Seth is a co-founder and General Partner at Susa Ventures. Seth has been an active seed stage technology investor since 2009 and has over 85 companies in his portfolios both individually and through Susa Ventures. Some of Seth’s previous investments include Nest, Optimizely, Wish, Docker, and Future Adviser. Seth also worked at The Richemont Group as a VP performing strategic marketing across their brand portfolio for nine years. He gets excited about frontier tech and can’t wait until there is a world of fully autonomous cars which stems from his previous involvement in re-launching Formula 1 Racing in the United States. Seth grew up in Colorado competing in the sport of Freestyle Skiing and helped start Freeskier Magazine, a successful ski magazine that is still in publication today. Seth graduated from the University of Colorado Leeds School of Business in 2000.",
+			"quote": "Investing for me has always been about the founders. I feel lucky to have worked with some amazing entrepreneurs; being able to share previous learnings with future founders is what motivates me everyday.",
+			"desc": "Seth is a co-founder and General Partner at Susa Ventures. Seth has been an active seed stage technology investor since 2009 and has over 85 companies in his portfolios both individually and through Susa Ventures. Some of Seth’s previous investments include Nest, Optimizely, Wish, Docker, and Future Adviser. Seth also worked at The Richemont Group as a VP performing strategic marketing across their brand portfolio for nine years. He gets excited about frontier tech and can’t wait until there is a world of fully autonomous cars. Seth was previously involved in re-launching Formula 1 Racing in the United States. He grew up in Colorado competing in the sport of Freestyle Skiing and helped start Freeskier Magazine, a successful ski magazine that is still in publication today. Seth graduated from the University of Colorado Leeds School of Business in 2000.",
 			"image": "./assets/team/seth_berman.jpg",
 			"social": [
 				{
 					"label": "twitter",
 					"image": "./assets/social/icon-twitter.svg",
-					"url": "http://twitter.com"
+					"url": "https://twitter.com/sethgb"
 				}, {
 					"label": "linkedin",
 					"image": "./assets/social/icon-linkedin.svg",
-					"url": "http://linkedin.com"
+					"url": "https://www.linkedin.com/in/seth-berman-31a6491"
 				}
 			]
 		}
@@ -383,32 +375,26 @@
 		"title": "A little more about us.",
 		"questions": [
 			{
-				"headline": "Where is susa?",
-				"copy": "We’re located in San Francisco. Our main office is in SOMA and we have an additional offices in Los Angeles and New York."
+				"headline": "where is susa?",
+				"copy": "We are headquartered in the Mission District of San Francisco. We also have outposts in Los Angeles and New York City."
 			}, {
-				"headline": "How long has susa been around?",
-				"copy": "We first started in 2010 with an investement in a little company called Instagram. We sold Instagram for $400k in 2011. That turned out to be a wonderful decision."
+				"headline": "how long has susa been around?",
+				"copy": "Susa Ventures was founded in the Summer of 2013 with our debut $25M early-stage fund. We are now investing out of our second early-stage fund, a $50M vehicle which launched in Summer of 2016. "
 			}, {
-				"headline": "How do I get in touch?",
+				"headline": "how do I get in touch?",
 				"copy": "You can email pitches@susaventures.com, but we strongly prefer you get in touch with us via our networks."
 			}, {
-				"headline": "Where else can we find susa?",
-				"copy": "We’re all pretty active online from Twitter to Facebook to LinkedIn and we also occasionally write articles about the thinking, ideas, and unique scenarios in venture funding on Medium."
+				"headline": "where else can we find susa?",
+				"copy": "We try to maintain an active presence throuhgout some of our favorite networks. Here's a few places you can find us."
 			}
 		],
 		"social": [
 			{
-				"label": "medium",
-				"url": "http://medium.com"
-			}, {
-				"label": "facenbook",
+				"label": "facebook",
 				"url": "https://www.facebook.com/SusaVentures/"
 			}, {
 				"label": "twitter",
 				"url": "https://twitter.com/SusaVentures"
-			}, {
-				"label": "linkedin",
-				"url": "http://linkedin.com"
 			}
 		]
 	}

@@ -9,9 +9,9 @@
 	flex-wrap: wrap;
 }
 
-.full-height {
-	height: 100%;
-}
+// .full-height {
+// 	max-height: 100%;
+// }
 
 .c-18 {
 	width: 100%;
@@ -76,7 +76,7 @@ li:nth-child(odd).i-2c {
 	padding: 0;
 }
 
-@media only screen and ( max-width: 1024px ){
+@media only screen and ( max-width: 1025px ){
     .i-10 {
       width: 100%;
     }
@@ -84,91 +84,25 @@ li:nth-child(odd).i-2c {
     .c-15, .c-14, .c-10, .c-9, .c-6, .c-4, .c-3 {
       margin: 0 auto;
     }
-}
 
-/* ----------- iPhone 4 and 4S ----------- */
+    .c-4 {
+      display: none;
+    }
 
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+    .i-2c {
+      width: calc(50% - 12px);
+    }
 
-}
+    li:nth-child(odd).i-2c {
+      margin-right: 24px;
+    }
 
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
+    li:nth-child(even).i-2c {
+      margin-right: 0;
+    }
 
 }
 
-/* ----------- iPhone 5 and 5S ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-}
-
-/* ----------- iPhone 6 ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-
-}
-
-/* ----------- iPhone 6+ ----------- */
 
 /* Portrait and Landscape */
 @media only screen 
