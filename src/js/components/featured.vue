@@ -47,7 +47,6 @@ module.exports = {
 			handler: function(direction){
 				Animations.portfolioMode = "bar";
 				if ( direction === "down" ){
-					console.log("intro out now");
 					Animations.portfolioIn();
 					Animations.scrollIndicatorHide();
 					$("body").removeClass("sidebar-open");
@@ -76,7 +75,6 @@ module.exports = {
 			element: document.getElementById("full-portfolio-section"),
 			handler: function(direction){
 				if ( direction === "down" ){
-					console.log("portfolio triggered");
 					Animations.portfolioMode = "full";
 					Animations.portfolioOut();
 				} else {
@@ -106,10 +104,8 @@ module.exports = {
 			element: document.getElementById("full-portfolio-section"),
 			handler: function(direction){
 				if (direction === "up" ){
-					console.log("sidebar up portfolio");
 					$("body").addClass("sidebar-dark-mode");
 				} else {
-					console.log("sidebar up 2 portfolio");
 					$("body").removeClass("sidebar-dark-mode");
 				}
 			},
@@ -122,10 +118,8 @@ module.exports = {
 			element: document.getElementById("full-portfolio-section"),
 			handler: function(direction){
 				if (direction === "down" ){
-					console.log("sidebar down portfolio");
 					$("body").addClass("sidebar-dark-mode");
 				} else {
-					console.log("sidebar down portfolio 2");
 					$("body").removeClass("sidebar-dark-mode");
 				}
 			},

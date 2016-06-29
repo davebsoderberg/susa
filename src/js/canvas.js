@@ -332,15 +332,14 @@ var self = module.exports = function(){
 
 		index = index || 0;
 
-		TweenMax.to( this.graphics, 0.2, { alpha: 0.35, delay: index * 0.1 });
+		TweenMax.to( this.graphics, 0.2, { alpha: 0.5, delay: index * 0.1 });
 	};
 
-	Square.prototype.fadeOut = function(index, duration){
+	Square.prototype.fadeOut = function(index){
 
-		duration = duration || 0.2;
 		index = index || 0;
 
-		TweenMax.to( this.graphics, duration, { alpha: 0, delay: index * 0.2 });
+		TweenMax.to( this.graphics, 0.2, { alpha: 0, delay: index * 0.2 });
 
 	};
 
@@ -421,7 +420,7 @@ var self = module.exports = function(){
 		self.f_maxH = Math.floor(self.maxH);
 		self.cubeNum = self.f_maxH * self.f_maxW;
 
-		self.blurredSquareNum = Math.floor( self.cubeNum * 0.06 );
+		self.blurredSquareNum = Math.floor( self.cubeNum * 0.33 );
 
 		self.padX = Math.floor((self._WIDTH - self.f_maxW * self.cW + self.cW)/2),
 		self.padY = Math.floor((self._HEIGHT - self.f_maxH * self.cH + self.cH)/2);
@@ -596,7 +595,7 @@ var self = module.exports = function(){
 			for ( var i = 0; i < self.blurredSquareNum; i++ ){
 				var index = self.Utils.getRandomSquare();
 				var c = self.cubes[index];
-				c.graphics.alpha = 0.35;
+				c.graphics.alpha = 0.5;
 
 				self.squareCollection.push( index );
 			}

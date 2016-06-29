@@ -133,10 +133,8 @@
 				element: document.querySelector(".manifest"),
 				handler: function(direction){
 					if (direction === "down" ){
-						console.log("sidebar down contact");
 						$("body").addClass("sidebar-dark-mode");
 					} else {
-						console.log("sidebar up contact");
 						$("body").removeClass("sidebar-dark-mode");
 					}
 				},

@@ -1,1 +1,1 @@
-# Hello World
+© Dave Soderberg & Bojan Wilytsch
