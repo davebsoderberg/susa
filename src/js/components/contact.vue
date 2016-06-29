@@ -51,7 +51,9 @@ module.exports = {
 					$(".sidebar-item:eq(2)").addClass("sidebar-active");
 				}
 			},
-			offset: "0%"
+			offset: function(){
+				return this.element.clientHeight;
+			}
 		})
 
 		document.querySelector(".copyright").innerHTML = "© Copyright Susa Ventures " + new Date().getFullYear();

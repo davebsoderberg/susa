@@ -113,7 +113,7 @@
 					}
 				},
 				offset: function(){
-					return -this.element.clientHeight * 0.04;
+					return this.element.clientHeight * 0.04;
 				}
 			});
 

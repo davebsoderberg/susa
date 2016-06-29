@@ -52,7 +52,6 @@ module.exports = {
 					Animations.scrollIndicatorHide();
 					$("body").removeClass("sidebar-open");
 					Canvas.animationStop = true;
-					$(".sidebar-item:eq(0)").addClass("sidebar-active");
 				}
 			},
 			offset: "50%"
@@ -63,11 +62,12 @@ module.exports = {
 			handler: function(direction){
 				Animations.portfolioMode = "bar";
 				if ( direction === "down" ){
+					$(".sidebar-item:eq(0)").addClass("sidebar-active");
 					$("body").addClass("bright-mode");
 				}
 			},
 			offset: function() {
-			    return this.element.clientHeight * 0.05;
+			    return this.element.clientHeight * 0.04;
 			}
 		});
 
