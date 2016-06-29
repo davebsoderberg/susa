@@ -10,9 +10,9 @@
 			<div class="i-6 full-height">
 				<div class="member-info">
 					<div class="section-label js fadeIn" v-if=" $index === 0"><span class="label">c.</span>team</div>
-					<h2 class="headline">{{ member.name }}  </h2>
-					<p class="copy member-quote"> {{member.quote}} </p>
-					<p class="copy"> {{member.desc}} </p>
+					<h2 class="headline">{{ member.name }}</h2>
+					<p class="copy member-quote">{{member.quote}}</p>
+					<p class="copy">{{member.desc}}</p>
 					<ul class="social-icons">
 						<li class="social-icon-link" v-for="icon in member.social">
 							<a :href="icon.url" target="_blank" class="social-icon" :class=" 'icn-' + icon.label "></a>

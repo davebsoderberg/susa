@@ -65,6 +65,22 @@ $decoration: "ActaDisplay-Medium", Georgia, Times New Roman, sans-serif;
 
 }
 
+.copy-quote {
+	position: relative;
+	padding:  0 0 2em 0;
+	quotes: "“" "”" "‘" "’";
+
+	&:before {
+		content: open-quote;
+		position: absolute;
+		transform: translate(-120%, 0);
+	}
+
+	&:after {
+		content: close-quote;
+	}
+}
+
 .member-quote {
 	position: relative;
 	padding:  0 0 2em 0;

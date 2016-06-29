@@ -11,21 +11,22 @@
 
 				<li class="line-module js fadeIn">
 					<div class="i-10">
-						<h2 class="headline orange"> {{ thesis.desc }} </h2>
+						<h2 class="headline orange">{{ thesis.desc }}</h2>
 					</div>
 				</li>
 
 				<li class="line-module js fadeIn" v-for="chapter in thesis.chapters">
 					<div class="i-10">
-						<h2 class="headline"> {{ chapter.title }} </h2>
+						<h2 class="headline">{{ chapter.title }}</h2>
 						<ul class="feature-list">
 							<li class="feature-item js svgIn" v-for="bullet in chapter.bullets">
 								<div class="feature-icon-container">
 									<img :src="bullet.icon" alt="bullet.headline" class="feature-icon">
 								</div>
 								<div class="feature-copy">
-									<h3 class="subheadline"> {{ bullet.headline }} </h3>
-									<p class="copy"> {{ bullet.copy }} </p>
+									<h3 class="subheadline">{{ bullet.headline }}</h3>
+									<p class="copy copy-quote" v-if="bullet.quote">{{ bullet.quote }}</p>
+									<p class="copy">{{ bullet.copy }}</p>
 								</div>
 							</li>
 						</ul>
@@ -125,6 +126,22 @@
 				},
 				offset: function(){
 					return this.element.clientHeight * 0.7;
+				}
+			})
+
+			var sidebarContactUp = new Waypoint({
+				element: document.querySelector(".manifest"),
+				handler: function(direction){
+					if (direction === "down" ){
+						console.log("sidebar down contact");
+						$("body").addClass("sidebar-dark-mode");
+					} else {
+						console.log("sidebar up contact");
+						$("body").removeClass("sidebar-dark-mode");
+					}
+				},
+				offset: function(){
+					return window.innerHeight * 0.5;
 				}
 			})
 

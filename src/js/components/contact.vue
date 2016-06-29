@@ -7,11 +7,11 @@
 		<div class="c-14">
 			<div class="i-10">
 				<div class="section-label light js fadeIn"><span class="label">d.</span>about</div>
-				<h2 class="headline light js fadeIn"> {{ contact.title }} </h2>
+				<h2 class="headline light js fadeIn">{{ contact.title }}</h2>
 				<ul class="about-list">
 					<li class="about-item i-2c js fadeIn" v-for="question in contact.questions">
 						<h3 class="subheadline light">{{ question.headline }}</h3>
-						<p class="copy muted"> {{ question.copy }} </p>
+						<p class="copy muted contact-copy">{{ question.copy }}</p>
 					</li>
 				</ul> <!-- end of about-list -->
 				<ul class="social-links">
@@ -64,6 +64,21 @@ module.exports = {
 			.on("sticky_kit:stick", function(e){
 				Animations.stickySmoothIn(e.target);
 			})
+		};
+
+		// Replacing email with a link
+		var contactBlocks = document.getElementsByClassName("contact-copy");
+
+		function extractEmail (str, index) {
+		    var email = str.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+		    if ( !email ){ return; };
+		    var newStr = '<a href="mailto:' + email + '" class="email-link">' + email + '</a>';
+		    contactBlocks[index].innerHTML = str.replace( email[0], newStr);
+		}
+		
+		for ( var i  = 0, len = contactBlocks.length; i < len; i++ ){
+			var str = contactBlocks[i].innerHTML;
+			extractEmail(str, i);
 		}
 	}
 }

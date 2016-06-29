@@ -56,8 +56,6 @@ var self = module.exports = function(){
 			transparent: true
 		} );
 
-		console.log(self._RENDERER);
-
 		self._WRAPPER = document.getElementById("hero-container");
 		self._WRAPPER.appendChild( self._RENDERER.view );
 
@@ -109,7 +107,7 @@ var self = module.exports = function(){
 
 				if ( r >= 150 && g >= 150 && b >= 150 ){
 					if ( this.detectConflict( pos, width, height ) ){
-						console.log("positions approved");
+						// console.log("positions approved");
 						pos.globalIndex = index;
 						self.contrastPosCollection.push(pos);
 					};
@@ -190,7 +188,6 @@ var self = module.exports = function(){
 				srcImgPosY = 0;
 
 			if ( self._WIDTH > self._HEIGHT ){
-				console.log("landscape");
 				var ratio = srcImgHeight/srcImgWidth;
 				srcImgWidth = self._WIDTH;
 				srcImgHeight = self._WIDTH * ratio;
@@ -199,7 +196,6 @@ var self = module.exports = function(){
 			};
 
 			if ( self._WIDTH < self._HEIGHT || srcImgHeight < self._HEIGHT ){
-				console.log("portrait");
 				var ratio = srcImgWidth/srcImgHeight;
 				srcImgHeight = self._HEIGHT;
 				srcImgWidth = self._HEIGHT * ratio;
@@ -450,10 +446,8 @@ var self = module.exports = function(){
 
 			dataImage.onload = function(){
 
-				console.log("Crashes here?");
-
 				var srcImg = self.Utils.calculateSrcImage(dataImage);
-
+				if ( self._ctx === undefined ){ return };
 				self._ctx.drawImage(dataImage, srcImg.posX, srcImg.posY, srcImg.width, srcImg.height);
 				self.createSquares();
 
@@ -615,7 +609,6 @@ var self = module.exports = function(){
 		};
 
 		if ( self.firstInit  && !self.Utils.isTouchDevice() ){
-			console.log("called animation");
 			self.animate();
 			self.firstInit = false;
 		};
@@ -626,7 +619,6 @@ var self = module.exports = function(){
 	};
 
 	self.recreateElement = function(){
-		console.log("recreate called");
 		self._STAGE.removeChildren();
 
 		self.gridCubes = [];
@@ -694,8 +686,6 @@ var self = module.exports = function(){
 		var padX = Math.floor( (parentContainer.clientWidth - ((c_maxW - 1) * cW))/2 ),
 			padY = Math.floor( (parentContainer.clientHeight - ((c_maxH - 1) * cH))/2 );
 
-		console.log( padX, padY );
-
 		splitA.style.width = Math.round( c_maxW * 0.25 ) * cW + "px";
 		splitA.style.height = 2 * cH + padY + dH/2 + "px";
 		splitA.style.left = Math.round( c_maxW * 0.25 ) * cW + padX + dW/2 + "px";
@@ -711,6 +701,8 @@ var self = module.exports = function(){
 	}
 
 	function animateCSSDot(delay){
+
+		if ( self.cssContainer === undefined ){ return };
 
 		var ele = self.cssContainer.childNodes[ Math.floor(Math.random() * self.cssContainer.childNodes.length ) ].childNodes[0];
 
@@ -760,8 +752,6 @@ var self = module.exports = function(){
 				o.animate(outlinePos);
 			};
 
-			animateCSSDot(delay);
-
 		};
 
 	};
@@ -788,19 +778,27 @@ var self = module.exports = function(){
 	self.animate = function(){
 		requestAnimationFrame( self.animate );
 
-		if ( !self.animationStop ){
+		now = performance.now();
+		dt = now - elapsedTime;
 
-			now = performance.now();
-			dt = now - elapsedTime;
+		if ( dt > 2000 ){
+			elapsedTime = now;
 
-			if ( dt > 2000 ){
-				elapsedTime = now;
+			if ( !self.animationStop ){
 				highlightSquare();
 			};
 
-			self._RENDERER.render( self._STAGE );
+			for ( var i = 0; i < 3; i++){
+				var delay = 0.1 * i;	
+				animateCSSDot(delay);
+			};
 
 		};
+
+		if ( !self.animationStop ){
+			self._RENDERER.render( self._STAGE );
+		}
+
 	};
 
 	function resize( newWidth, newHeight){

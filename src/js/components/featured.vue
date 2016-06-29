@@ -102,6 +102,38 @@ module.exports = {
 			offset: "96px"
 		})
 
+		var sidebarPortfolioDown = new Waypoint({
+			element: document.getElementById("full-portfolio-section"),
+			handler: function(direction){
+				if (direction === "up" ){
+					console.log("sidebar up portfolio");
+					$("body").addClass("sidebar-dark-mode");
+				} else {
+					console.log("sidebar up 2 portfolio");
+					$("body").removeClass("sidebar-dark-mode");
+				}
+			},
+			offset: function(){
+				return window.innerHeight/8;
+			}
+		})
+
+		var sidebarPortfolioUp = new Waypoint({
+			element: document.getElementById("full-portfolio-section"),
+			handler: function(direction){
+				if (direction === "down" ){
+					console.log("sidebar down portfolio");
+					$("body").addClass("sidebar-dark-mode");
+				} else {
+					console.log("sidebar down portfolio 2");
+					$("body").removeClass("sidebar-dark-mode");
+				}
+			},
+			offset: function(){
+				return window.innerHeight * 0.5;
+			}
+		})
+
 		var portfolioUIWaypointUp = new Waypoint({
 			element: document.getElementById("full-portfolio-section"),
 			handler: function(direction){

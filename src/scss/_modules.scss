@@ -26,7 +26,7 @@
 	border-bottom: none;
 	overflow: hidden;
 	position: relative;
-	transition: all ease-in-out 0.3s 0.3s;
+	transition: height ease-in-out 0.3s 0.3s;
 
 	a {
 		width: 100%;
@@ -98,7 +98,7 @@
 
 	.sidebar-item {
 		height: 64px;
-		transition: all ease-in-out 0.3s;
+		transition: height ease-in-out 0.3s;
 	}
 
 	.sidebar-number {
@@ -144,7 +144,7 @@
 	}
 }
 
-.dark-mode {
+.sidebar-dark-mode {
 
 	.sidebar-item {
 		&:after {

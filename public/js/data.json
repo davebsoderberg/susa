@@ -60,14 +60,17 @@
 				"bullets": [
 					{
 						"headline": "defensible",
+						"quote": "I'm a quote placeholder",
 						"copy": "We invest in founders and companies that are building competitive moats using data, network effects and/or economies of scale.",
 						"icon": "./assets/icons/icon-defensible.svg"
 					}, {
 						"headline": "technical",
+						"quote": "I'm a quote placeholder",
 						"copy": "We invest with technical founders. There is too much risk in relying on external teams to guide product and engineering.",
 						"icon": "./assets/icons/icon-technical.svg"
 					}, {
 						"headline": "confident yet humble",
+						"quote": "I'm a quote placeholder",
 						"copy": "We love to work with founders who are confident in their abilities, but humble enough to know their weaknesses. Self-aware founders hire the best teams around them.",
 						"icon": "./assets/icons/icon-self-aware.svg"
 					}
@@ -82,10 +85,12 @@
 						"icon": "./assets/icons/icon-high-bandwidth.svg"
 					}, {
 						"headline": "strategic and tactical",
+						"quote": "I'm a quote placeholder",
 						"copy": "We love the high level stuff as much as any other VC, but we prefer digging in on tactical stuff. Whether it’s testing out your API, or providing feedback on website copy, we love to get in the weeds.",
 						"icon": "./assets/icons/icon-strategic.svg"
 					}, {
 						"headline": "family",
+						"quote": "I'm a quote placeholder",
 						"copy": "We think of our fund as a startup, and in that way, we are your peer. Our product is the Susa Family, and our focus is to build better ways for everyone in the family to connect, share and learn from each other.",
 						"icon": "./assets/icons/icon-supportive.svg"
 					}
@@ -335,7 +340,7 @@
 			]
 		},	{
 			"name": "Leo Polovets.",
-			"quote": "After working at Google and two early-stage startups as a software engineer, I decided to focus on learning about building successful businesses from the VC side. I love working with smart, passionate founders; helping them wherever possible; and sharing lessons and knowledge within the Susa family", 
+			"quote": "After working at Google and two early-stage startups as a software engineer, I decided to focus on learning about building successful businesses from the VC side. I love working with smart, passionate founders; helping them wherever possible; and sharing lessons and knowledge within the Susa family.", 
 			"desc": "Leo is a co-founder and General Partner at Susa Ventures. Prior to Susa, Leo was one of the first engineers at LinkedIn in 2003, then worked on payment fraud detection at Google, then designed and built the data cleaning and deduping engines at Factual. He is an angel investor in over a dozen companies, including DataFox, Boomtrain, Lumoid, and Momentum Machines. Leo holds a BS with Honors degree from Caltech, and in 2002, he was one of three members of Caltech's world finalist ACM International Programming Contest team. As one founder put it, Leo is a nerd’s nerd. In his spare time, he enjoying reading, writing, programming, and spending time with his wife. ",
 			"image": "./assets/team/leo_polovets.jpg",
 			"social": [

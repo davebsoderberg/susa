@@ -2,7 +2,7 @@
 	
 	<div class="sidebar-container">
 		<ul class="sidebar">
-			<li class="sidebar-item">
+			<li class="sidebar-item sidebarIn">
 				<a href="#section-family" @touchstart="mobileDisable">
 					<div class="sidebar-number">a.</div>
 					<div class="sidebar-dash"></div>
@@ -10,7 +10,7 @@
 					<div class="sidebar-border"></div>
 				</a>
 			</li>
-			<li class="sidebar-item">
+			<li class="sidebar-item sidebarIn">
 				<a href="#section-pedigree" @touchstart="mobileDisable">
 					<div class="sidebar-number">b.</div>
 					<div class="sidebar-dash"></div>
@@ -18,7 +18,7 @@
 					<div class="sidebar-border"></div>
 				</a>
 			</li>
-			<li class="sidebar-item">
+			<li class="sidebar-item sidebarIn">
 				<a href="#section-thesis" @touchstart="mobileDisable">
 					<div class="sidebar-number">c.</div>
 					<div class="sidebar-dash"></div>
@@ -26,7 +26,7 @@
 					<div class="sidebar-border"></div>
 				</a>
 			</li>
-			<li class="sidebar-item">
+			<li class="sidebar-item sidebarIn">
 				<a href="#section-contact" @touchstart="mobileDisable">
 					<div class="sidebar-number">d.</div>
 					<div class="sidebar-dash"></div>

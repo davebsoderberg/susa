@@ -7,6 +7,9 @@ var self = module.exports = {
 	introTL: function(){
 		return new TimelineMax();
 	},
+	mainTL: function(){
+		return new TimelineMax();
+	},
 	curtainTL: function(){
 		return new TimelineMax();
 	},
@@ -36,7 +39,10 @@ var self = module.exports = {
 	},
 	curtainIn: function(){
 		self.curtainTL().to(".curtain", 0.8, { x: "100%", skewX: "-20deg", ease: Power2.easeInOut, onComplete: function(){
-				TweenMax.set(".curtain-container", {zIndex: "-1"})
+				TweenMax.set(".curtain-container", {zIndex: "-1"});
+				self.mainTL().staggerTo(".sidebarIn", 0.8, {opacity: 1, x: 0, ease: Power2.easeOut }, 0.2, "sync")
+					.staggerTo(".introDown", 0.8, {opacity: 1, y: 0, ease: Power2.easeOut }, 0.2, "sync")
+					.staggerTo(".introUp", 0.8, {opacity: 1, y: 0, ease: Power2.easeOut }, 0.2, "sync");
 		}})
 			.to(".hero-image", 1, { opacity: 1 }, "-=0.3")
 			.to(".main-container", 1, { opacity: 1 }, "-=0.8");
@@ -92,12 +98,12 @@ var self = module.exports = {
 		TweenMax.to(target, 0.4, {opacity: 0, y: "-24px" });
 	},
 	stickyIn: function(target){
-		TweenMax.to(target, 0.4, {opacity: 1, y: 0});
+		TweenMax.fromTo(target, 0.4, {opacity: 0, y: "-24px"}, {opacity: 1, y: 0});
 	},
 	stickySmoothIn: function(target){
 		TweenMax.to(target, 0.4, {y: 0});
 	},
 	stickySmoothOut: function(target){
-		TweenMax.to(target, 0.4, {y: "-24px"});
+		TweenMax.to(target, 0.4, {y: "0"});
 	}
 };
