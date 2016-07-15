@@ -32,45 +32,42 @@
 	"featured": [
 		{
 			"name": "Andela.",
-			"quote": "Andela is building a for-profit company with the mission to train 10k developers on the continent of Africa over the next decade. We have no doubt they will fundamentally change the fabric of the African continent as well as the world.",
+			"quote": "Andela enables global companies to extend their engineering teams with world-class, African-based developers. The idea got us excited, but it was the team that got us over the line; we couldn’t have picked a better team to execute on this vision.",
 			"author": "Chad Byers, Partner, Susa Ventures"
 		}, {
 			"name": "Flexport.",
-			"quote": "Flexport is re-inventing freight forwarders totally automating logistics with software for ocean and air freight giving companies full control over their entire supply chain.",
+			"quote": "Flexport is bringing modern technology to freight forwarding and customs brokerage. Entrepreneurs like Ryan don’t come along very often, so when you see one, you get on board.",
 			"author": "Seth Berman, Partner, Susa Ventures"
 		}, {
 			"name": "LendUp.",
-			"quote": "LendUp’s mission is to expand access to credit and lower the cost of borrowing for the millions of Americans that traditional banks are typically unable to serve.",
+			"quote": "LendUp’s mission is to expand access to credit and lower the cost of borrowing for the millions of Americans that traditional banks are unable or unwilling to serve. They are doing it in an entirely new way - being the first to use a full-stack technology approach.",
 			"author": "Leo Polovets, Partner, Susa Ventures"
 		}, {
 			"name": "Qadium.",
-			"quote": "Qadium’s organizes and indexes information on all devices connected to the public internet. Think Google Maps for any enterprise or government networks surfacing relationships between them and their connected devices",
+			"quote": "Qadium scans, indexes and organizes information on all internet connected devices for the purpose of identifying vulnerabilities. Very rarely do you see a technology this far ahead of the competition.",
 			"author": "Seth Berman, Partner, Susa Ventures"
 		}, {
 			"name": "Robinhood.",
-			"quote": "Robinhood is reimagining financial products in a mobile world, starting with brokerage, and is quickly becoming the portal by which an entire generation learns about investing.",
+			"quote": "Robinhood is reimagining financial products in a mobile world, starting with brokerage, and is quickly becoming the portal by which an entire generation learns about investing. Vlad and Baiju had a vision to replace salespeople with engineers and product people, enabling much lower overhead and subsequently introduced a new paradigm of sustainable free trading.",
 			"author": "Chad Byers, Partner, Susa Ventures"
 		}
 	],
 	"thesis": {
-		"desc": "We believe strong competitive moats are fundamental to building a thriving business. We seek out highly defensible companies that leverage data, economies of scale, or network effects to build value and achieve longevity. From the first check in to helping close your round, we strive to be the most supportive investor on your cap table. Susa Ventures is a family, where each member benefits from the family’s collective experience.",
+		"desc": "We believe strong competitive moats are fundamental to building thriving businesses. We seek out highly defensible companies that leverage data, economies of scale, or network effects to build value and achieve longevity. From the first check in to helping close your round, we strive to be the most supportive investor on your cap table. Susa Ventures is a family, where each member benefits from the family’s collective experience.",
 		"chapters": [
 			{
 				"title": "Qualities of our family.",
 				"bullets": [
 					{
 						"headline": "defensible",
-						"quote": "I'm a quote placeholder",
 						"copy": "We invest in founders and companies that are building competitive moats using data, network effects and/or economies of scale.",
 						"icon": "./assets/icons/icon-defensible.svg"
 					}, {
 						"headline": "technical",
-						"quote": "I'm a quote placeholder",
-						"copy": "We invest with technical founders. There is too much risk in relying on external teams to guide product and engineering.",
+						"copy": "We invest in teams that include technical founders. There is too much risk in relying on external teams to guide product and engineering.",
 						"icon": "./assets/icons/icon-technical.svg"
 					}, {
 						"headline": "confident yet humble",
-						"quote": "I'm a quote placeholder",
 						"copy": "We love to work with founders who are confident in their abilities, but humble enough to know their weaknesses. Self-aware founders hire the best teams around them.",
 						"icon": "./assets/icons/icon-self-aware.svg"
 					}
@@ -81,17 +78,18 @@
 				"bullets": [
 					{
 						"headline": "high bandwidth",
-						"copy": "We strive to have no more than 10 portfolio companies per partner to ensure we can be highly involved in every business. We want to the be the first call when you need help and have the bandwidth to dig in at the speed that startups move.",
+						"copy": "With three partners making 8-10 total investments each year, we can spend more time per company than almost all funds of our size. We want to the be the first call when you need help and have the bandwidth to dig in at the speed that startups move.",
+						"quote": "Susa has been hands-down one of Flexport's most engaged, connected, and helpful investors. - Ryan, CEO, Flexport",
 						"icon": "./assets/icons/icon-high-bandwidth.svg"
 					}, {
-						"headline": "strategic and tactical",
-						"quote": "I'm a quote placeholder",
-						"copy": "We love the high level stuff as much as any other VC, but we prefer digging in on tactical stuff. Whether it’s testing out your API, or providing feedback on website copy, we love to get in the weeds.",
+						"headline": "strategic and tactical support",
+						"copy": "We love brainstorming and strategizing as much as any other VC, but we also enjoy rolling up our sleeves to help with tactical details. Whether it’s Leo beta testing your API, Chad providing feedback on a product feature, or Seth helping with customer acquisition, no request is too big or small, and we will do whatever we can to help.",
+						"quote": "Susa has been amazing. Each partner brings their unique domain expertise to the table. - Vlad and Baiju, Co-founders, Robinhood",
 						"icon": "./assets/icons/icon-strategic.svg"
 					}, {
 						"headline": "family",
-						"quote": "I'm a quote placeholder",
-						"copy": "We think of our fund as a startup, and in that way, we are your peer. Our product is the Susa Family, and our focus is to build better ways for everyone in the family to connect, share and learn from each other.",
+						"copy": "We think of our fund as a startup, and in that way, we are your peer. Our product is the Susa Family, and our focus is on building better ways for everyone in the family to connect, share, and learn from each other. We help founders connect with and learn from each other.",
+						"quote": "Susa has been our most helpful seed investor. I recommend doing whatever you can to get them to invest. It’s good to be in the Susa Family. - Harry, CEO, Periscope Data",
 						"icon": "./assets/icons/icon-supportive.svg"
 					}
 
@@ -99,7 +97,7 @@
 			}
 		],
 		"manifest": {
-			"copy": "Susa is a large family of mountain gorillas in the Virunga National Park in Rwanda. Only a few thousand people see this group in the wild each year. Coincidentally, on three separate trips, Chad, Seth, and Leo had independently visited this family. They loved the metaphor of a VC firm and its portfolio being like a family; a close-knit community that can depend on each other for anything."
+			"copy": "Susa Ventures is named after a Mountain Gorilla family in Rwanda called the Susa Family. These gorillas are extraordinary (and awesome!), as they were one of the first species on earth to organize into strong family groups. This idea of bringing together a unique group of individuals to form a strong family and community was the genesis behind the fund. Come join the family!"
 		}
 	},
 	"portfolioFilter": [
@@ -129,7 +127,7 @@
 			"tag": "fundOne"
 		}, {
 			"name": "Casetext",
-			"desc": "Casetext allows lawyers to research and annotate cases, creating a high quality, low cost legal knowledge base.",
+			"desc": "Casetext allows lawyers to research and annotate cases, creating a high quality, low-cost legal knowledge base.",
 			"url": "https://casetext.com/",
 			"logo": "./assets/portfolio/logo-casetext.svg",
 			"tag": "fundTwo"
@@ -140,12 +138,6 @@
 			"logo": "./assets/portfolio/logo-declara.svg",
 			"tag": "fundTwo"
 		}, {
-			"name": "Percolata",
-			"desc": "Percolata uses sensors to measure foot traffic in retail locations, and intelligently generates dynamic staffing schedules based on predicted customer volume.",
-			"url": "http://www.percolata.com/",
-			"logo": "",
-			"tag": "fundTwo"
-		}, {
 			"name": "Flexport",
 			"desc": "Flexport is a modern, software-powered freight forwarder that helps companies with global logistics.",
 			"url": "https://www.flexport.com/",
@@ -153,7 +145,7 @@
 			"tag": "fundTwo"
 		}, {
 			"name": "FoxCommerce",
-			"desc": "Fox Commerce is reinventing the ways brand and retailers run their businesses online, allowing anyone to set up and create an online store with powerful social, mobile, and payment features.",
+			"desc": "Fox Commerce is reinventing the ways brands and retailers run their businesses online, allowing anyone to set up and create an online store with powerful social, mobile, and payment features.",
 			"url": "http://foxcommerce.com/",
 			"logo": "./assets/portfolio/logo-fox-commerce.svg",
 			"tag": "fundOne"
@@ -161,23 +153,23 @@
 			"name": "GraphSQL",
 			"desc": "GraphSQL is a real­-time graph database and analytics technology. It’s used for applications in fraud detection, financial risk analysis, and purchase intent analytics.",
 			"url": "http://www.graphsql.com/",
-			"logo": "",
+			"logo": "./assets/portfolio/logo-graphsql.svg",
 			"tag": "fundOne"
 		}, {
 			"name": "Hodinkee",
-			"desc": "Hodiknee is destination site for high quality wristwatch news and reviews.",
+			"desc": "Hodiknee is a destination site for high quality wristwatch news and reviews.",
 			"url": "https://www.hodinkee.com/",
 			"logo": "./assets/portfolio/logo-hodinkee.svg",
 			"tag": "fundOne"
 		}, {
 			"name": "LendUp",
-			"desc": "LendUp provides credit products to financially underserved Americans, including short-term loans, installment loans, and credit cards. They also provide free financial education and help borrowers improve their credit over time.",
+			"desc": "LendUp provides credit products to financially underserved Americans, including short-term loans, installment loans, and credit cards. They also provide free financial education courses and help borrowers improve their credit over time.",
 			"url": "https://www.lendup.com/",
 			"logo": "./assets/portfolio/logo-lendup.svg",
 			"tag": "fundOne"
 		}, {
 			"name": "Lyst",
-			"desc": "Lyst is one of the world’s largest fashion marketplaces. They partner directly with brands and multi-brand stores to deliver a personalized shopping experience for consumers.",
+			"desc": "Lyst is one of the world’s largest fashion marketplaces. They partner directly with brands and multi-brand stores to deliver personalized shopping experiences for consumers.",
 			"url": "https://www.lyst.com/",
 			"logo": "./assets/portfolio/logo-lyst.svg",
 			"tag": "fundOne"
@@ -189,7 +181,7 @@
 			"tag": "fundOne"
 		}, {
 			"name": "Modsy",
-			"desc": "Modsy lets consumers get incredibly realistic renderings of furniture in their spaces by simply taking photos of their rooms and submitting them along with the rooms’ dimensions. Modsy enables consumers to virtually try out different furniture and room layouts, and to easily make purchasing decisions.",
+			"desc": "Modsy lets consumers get photorealistic renderings of furniture in their spaces by simply taking photos of their rooms and submitting them along with the rooms’ dimensions. Modsy enables consumers to virtually try out different furniture and room layouts, and to easily make purchasing decisions.",
 			"url": "https://www.modsy.com/",
 			"logo": "./assets/portfolio/logo-modsy.svg",
 			"tag": "fundOne"
@@ -218,6 +210,12 @@
 			"logo": "./assets/portfolio/logo-pachyderm.svg",
 			"tag": "fundOne"
 		}, {
+			"name": "Percolata",
+			"desc": "Percolata uses sensors to measure foot traffic in retail locations, and intelligently generates dynamic staffing schedules based on predicted customer volume.",
+			"url": "http://www.percolata.com/",
+			"logo": "./assets/portfolio/logo-percolata.svg",
+			"tag": "fundTwo"
+		}, {
 			"name": "Periscope Data",
 			"desc": "Periscope is a tool that help data analysts become more productive. It plugs into external databases and makes it possible to run queries across very large volumes of data very quickly.",
 			"url": "https://www.periscopedata.com/",
@@ -243,7 +241,7 @@
 			"tag": "fundOne"
 		}, {
 			"name": "Qadium",
-			"desc": "Qadium’s organizes and indexes information about all Internet-facing devices, surfacing relationships between those devices. They are the first real-time global Internet monitoring platform for government and enterprise clients.",
+			"desc": "Qadium organizes and indexes information about all Internet-facing devices and surfaces relationships between those devices. They are the first real-time global Internet monitoring platform for government and enterprise clients.",
 			"url": "https://qadium.com/",
 			"logo": "./assets/portfolio/logo-qadium.svg",
 			"tag": "fundOne"
@@ -311,7 +309,7 @@
 			"name": "Whisper",
 			"desc": "Whisper is an anonymous social network that is revolutionizing the way millions are interacting and expressing themselves online. People can express themselves without worrying about stigma or bullying.",
 			"url": "https://whisper.sh/",
-			"logo": "",
+			"logo": "./assets/portfolio/logo-whisper.svg",
 			"tag": "fundOne"
 		}, {
 			"name": "Zephyr Health",
@@ -360,8 +358,8 @@
 			]
 		},	{
 			"name": "Seth Berman.",
-			"quote": "Investing for me has always been about the founders. I feel lucky to have worked with some amazing entrepreneurs; being able to share previous learnings with future founders is what motivates me everyday.",
-			"desc": "Seth is a co-founder and General Partner at Susa Ventures. Seth has been an active seed stage technology investor since 2009 and has over 85 companies in his portfolios both individually and through Susa Ventures. Some of Seth’s previous investments include Nest, Optimizely, Wish, Docker, and Future Adviser. Seth also worked at The Richemont Group as a VP performing strategic marketing across their brand portfolio for nine years. He gets excited about frontier tech and can’t wait until there is a world of fully autonomous cars. Seth was previously involved in re-launching Formula 1 Racing in the United States. He grew up in Colorado competing in the sport of Freestyle Skiing and helped start Freeskier Magazine, a successful ski magazine that is still in publication today. Seth graduated from the University of Colorado Leeds School of Business in 2000.",
+			"quote": "Investing for me has always been about the founders. I feel lucky to have worked with some amazing entrepreneurs; being able to share previous learnings with future founders is what motivates me every day.",
+			"desc": "Seth is a co-founder and General Partner at Susa Ventures. Seth has been an active seed stage technology investor since 2009 and has over 85 companies in his portfolios both individually and through Susa Ventures. Some of Seth’s previous investments include Nest, Optimizely, Wish, Docker, and FutureAdviser. Seth also worked at The Richemont Group as a VP performing strategic marketing across their brand portfolio for nine years. He gets excited about frontier tech and can’t wait until we live in a world of fully autonomous cars. Seth was previously involved in re-launching Formula 1 Racing in the United States. He grew up in Colorado competing in the sport of Freestyle Skiing and helped start Freeskier Magazine, a successful ski magazine that is still in publication today. Seth graduated from the University of Colorado Leeds School of Business in 2000.",
 			"image": "./assets/team/seth_berman.jpg",
 			"social": [
 				{
