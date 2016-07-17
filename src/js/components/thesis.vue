@@ -25,8 +25,9 @@
 								</div>
 								<div class="feature-copy">
 									<h3 class="subheadline">{{ bullet.headline }}</h3>
-									<p class="copy copy-quote" v-if="bullet.quote">{{ bullet.quote }}</p>
-									<p class="copy">{{ bullet.copy }}</p>
+									<p class="copy-quote" v-if="bullet.quote">{{ bullet.quote }}</p>
+									<p class="copy-quote-author" v-if="bullet.quoteAuthor">{{ bullet.quoteAuthor }}</p>
+									<p class="copy" v-for="paragraph in bullet.copy">{{ paragraph }}</p>
 								</div>
 							</li>
 						</ul>

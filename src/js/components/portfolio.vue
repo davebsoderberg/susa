@@ -15,17 +15,17 @@
 		<div class="portfolio-list-wrapper">
 			<ul class="full-portfolio-list">
 				<li class="portfolio-item" v-for="company in portfolio">
-					<div class="portfolio-item-inner" v-bind:class="{ 'inActive': company.tag === selectedTag }">
+					<a class="portfolio-item-inner" :href="company.url" target="_blank" v-bind:class="{ 'inActive': company.tag === selectedTag }">
 						<img :src="company.logo" alt="{{ company.name }}" class="portfolio-image">
 						<p class="portfolio-copy">{{ company.desc }}</p>
-						<a :href="company.url" target="_blank" class="icn-link">
+						<div  class="icn-link">
 							<span class="link-icon">
 								<span class="link-icon-inner">
 									<span class="link-icon-dash"></span>
 								</span>
 							</span>
-						</a>
-					</div>
+						</div>
+					</a>
 				</li>
 			</ul>
 		</div>

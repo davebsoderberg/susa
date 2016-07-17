@@ -40,6 +40,7 @@ $decoration: "ActaDisplay-Medium", Georgia, Times New Roman, sans-serif;
 	font-size: 1.231em;
 	font-weight: 200;
 	line-height: 1.750em;
+	padding:  0 0 2em 0;
 	color: $prim;
 }
 
@@ -66,9 +67,12 @@ $decoration: "ActaDisplay-Medium", Georgia, Times New Roman, sans-serif;
 }
 
 .copy-quote {
+	font-size: 1.231em;
+	font-weight: 200;
+	line-height: 1.750em;
 	position: relative;
-	padding:  0 0 2em 0;
 	quotes: "“" "”" "‘" "’";
+	color: $prim;
 
 	&:before {
 		content: open-quote;
@@ -81,9 +85,16 @@ $decoration: "ActaDisplay-Medium", Georgia, Times New Roman, sans-serif;
 	}
 }
 
+.copy-quote-author {
+	font-size: 1.231em;
+	font-weight: 200;
+	line-height: 1.750em;
+	padding:  0 0 2em 0;
+	color: $prim;
+}
+
 .member-quote {
 	position: relative;
-	padding:  0 0 2em 0;
 	quotes: "“" "”" "‘" "’";
 
 	&:before {

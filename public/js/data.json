@@ -60,15 +60,21 @@
 				"bullets": [
 					{
 						"headline": "defensible",
-						"copy": "We invest in founders and companies that are building competitive moats using data, network effects and/or economies of scale.",
+						"copy": [
+							"We invest in founders and companies that are building competitive moats using data, network effects and/or economies of scale."
+						],
 						"icon": "./assets/icons/icon-defensible.svg"
 					}, {
 						"headline": "technical",
-						"copy": "We invest in teams that include technical founders. There is too much risk in relying on external teams to guide product and engineering.",
+						"copy": [
+							"We invest in teams that include technical founders. There is too much risk in relying on external teams to guide product and engineering."
+						],
 						"icon": "./assets/icons/icon-technical.svg"
 					}, {
 						"headline": "confident yet humble",
-						"copy": "We love to work with founders who are confident in their abilities, but humble enough to know their weaknesses. Self-aware founders hire the best teams around them.",
+						"copy": [
+							"We love to work with founders who are confident in their abilities, but humble enough to know their weaknesses. Self-aware founders hire the best teams around them."
+						],
 						"icon": "./assets/icons/icon-self-aware.svg"
 					}
 
@@ -78,18 +84,28 @@
 				"bullets": [
 					{
 						"headline": "high bandwidth",
-						"copy": "With three partners making 8-10 total investments each year, we can spend more time per company than almost all funds of our size. We want to the be the first call when you need help and have the bandwidth to dig in at the speed that startups move.",
-						"quote": "Susa has been hands-down one of Flexport's most engaged, connected, and helpful investors. - Ryan, CEO, Flexport",
+						"copy": [
+							"With three partners making 8-10 total investments each year, we can spend more time per company than almost all funds of our size. We want to the be the first call when you need help and have the bandwidth to dig in at the speed that startups move."
+						],
+						"quote": "Susa has been hands-down one of Flexport's most engaged, connected, and helpful investors.",
+						"quoteAuthor": "- Ryan, CEO, Flexport",
 						"icon": "./assets/icons/icon-high-bandwidth.svg"
 					}, {
 						"headline": "strategic and tactical support",
-						"copy": "We love brainstorming and strategizing as much as any other VC, but we also enjoy rolling up our sleeves to help with tactical details. Whether it’s Leo beta testing your API, Chad providing feedback on a product feature, or Seth helping with customer acquisition, no request is too big or small, and we will do whatever we can to help.",
-						"quote": "Susa has been amazing. Each partner brings their unique domain expertise to the table. - Vlad and Baiju, Co-founders, Robinhood",
+						"copy": [
+							"We love brainstorming and strategizing as much as any other VC, but we also enjoy rolling up our sleeves to help with tactical details. Whether it’s Leo beta testing your API, Chad providing feedback on a product feature, or Seth helping with customer acquisition, no request is too big or small, and we will do whatever we can to help.",
+							"I am second paragraph."
+						],
+						"quote": "Susa has been amazing. Each partner brings their unique domain expertise to the table. ",
+						"quoteAuthor": "- Vlad and Baiju, Co-founders, Robinhood",
 						"icon": "./assets/icons/icon-strategic.svg"
 					}, {
 						"headline": "family",
-						"copy": "We think of our fund as a startup, and in that way, we are your peer. Our product is the Susa Family, and our focus is on building better ways for everyone in the family to connect, share, and learn from each other. We help founders connect with and learn from each other.",
-						"quote": "Susa has been our most helpful seed investor. I recommend doing whatever you can to get them to invest. It’s good to be in the Susa Family. - Harry, CEO, Periscope Data",
+						"copy": [ 
+							"We think of our fund as a startup, and in that way, we are your peer. Our product is the Susa Family, and our focus is on building better ways for everyone in the family to connect, share, and learn from each other. We help founders connect with and learn from each other."
+						],
+						"quote": "Susa has been our most helpful seed investor. I recommend doing whatever you can to get them to invest. It’s good to be in the Susa Family.",
+						"quoteAuthor": "- Harry, CEO, Periscope Data",
 						"icon": "./assets/icons/icon-supportive.svg"
 					}
 
