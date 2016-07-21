@@ -15,6 +15,9 @@ Use `gulp` to compile js, scss, images and start the server.
 ### Compile CSS & Javascript
 Run `gulp build` to compile all files for production.
 
+#### Used Frameworks & Libraries
+[Pixi.js](http://www.pixijs.com/), [Vue.js](http://vuejs.org/), [GSAP](http://greensock.com/gsap#) & devDependencies in `package.json`.
+
 
 
 
