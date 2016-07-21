@@ -1,5 +1,5 @@
 ## Content
-All content is provided by the `data.json` file in the `/src/js/` folder. Each item needs to be within quotations `"…"` and ended with a `,`.
+All content is provided by the `data.json` file in the `/public/js/` folder. Each item needs to be within quotations `"…"` and ended with a `,`.
 
 ## CSS & Javscript
 ### Add gulp dependecies
