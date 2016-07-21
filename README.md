@@ -1,5 +1,5 @@
 ## Content
-All content is provided by the `data.json` file in the `/public/js/` folder. Each item needs to be within quotations `"…"` and ended with a `,`.
+All content is provided by the `data.json` file in the `/public/js/` folder. Each item needs to be within quotations `"…"` and ended with a `,`. All imagery which needs to be preloaded should be added in the `imagery: […]` array.
 
 ## CSS & Javscript
 
