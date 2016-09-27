@@ -5,7 +5,7 @@
 			<div class="side-quote philosophy-quote">the susa</br> difference. </br></div>
 		</div>
 		<div class="c-14">
-			<div class="section-label js fadeIn"><span class="label">b.</span>philosophy</div>
+			<div class="section-label js fadeIn"><span class="label">c.</span>philosophy</div>
 
 			<ul class="line-module-container">
 

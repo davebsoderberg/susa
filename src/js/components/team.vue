@@ -9,7 +9,7 @@
 			<div class="i-3 full-height"></div>
 			<div class="i-6 full-height">
 				<div class="member-info">
-					<div class="section-label js fadeIn" v-if=" $index === 0"><span class="label">c.</span>team</div>
+					<div class="section-label js fadeIn" v-if=" $index === 0"><span class="label">b.</span>team</div>
 					<h2 class="headline">{{ member.name }}</h2>
 					<p class="copy member-quote">{{member.quote}}</p>
 					<p class="copy">{{member.desc}}</p>
