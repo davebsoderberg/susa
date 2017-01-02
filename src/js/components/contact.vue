@@ -40,6 +40,7 @@ module.exports = {
 		}
 	},
 	ready: function(){
+		if (this.isTouch) return;
 		var contactWaypoint = new Waypoint({
 			element: document.getElementById("section-contact"),
 			handler: function(direction){

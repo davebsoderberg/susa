@@ -102,6 +102,10 @@
 			});
 
 			// Thesis
+			if ( this.isTouch ) {
+				TweenMax.set(".manifest-headline", { y: 0, opacity: 1 });
+				return;
+			};
 			var thesisWaypoint = new Waypoint({
 				element: document.getElementById("section-thesis"),
 				handler: function(direction){

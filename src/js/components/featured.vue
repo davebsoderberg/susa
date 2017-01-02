@@ -42,6 +42,7 @@ module.exports = {
 	},
 	ready: function(){
 
+		if ( this.isTouch ) return;
 		var familyWaypoint = new Waypoint({
 			element: document.getElementById("section-family"),
 			handler: function(direction){
@@ -162,10 +163,10 @@ module.exports = {
 		togglePortfolio: function(){
 			Animations.portfolioMode = "full";
 			if ( !$("body").hasClass("portfolio-open") ){
-				Animations.portfolioOpen();
+				Animations.portfolioOpen(this.isTouch);
 				$("body").addClass("portfolio-open");
 			} else {
-				Animations.portfolioClose();
+				Animations.portfolioClose(this.isTouch);
 				$("body").removeClass("portfolio-open");
 			}
 		}

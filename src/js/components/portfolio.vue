@@ -35,7 +35,8 @@
 
 <script>
 
-	var Animations = require("../animation.js"),
+	var Canvas = require('../canvas.js'),
+		Animations = require("../animation.js"),
 		$ = require("jquery");
 		
 	module.exports = {
@@ -43,16 +44,24 @@
 			return {
 				portfolio: Data.portfolio,
 				portfolioFilter: Data.portfolioFilter,
-				selectedTag: "all"
+				selectedTag: "all",
+				isOpen: false,
+				isTouch: Canvas.Utils.isTouchDevice(),
+			}
+		},
+		ready: function(){
+			if (this.isTouch) {
+				TweenMax.set(".portfolio-item", { opacity: 1, y: 0 });
+				TweenMax.set(".filter-item", { opacity: 1, x: 0 })
 			}
 		},
 		methods: {
 			togglePortfolio: function(){
 				if ( !$("body").hasClass("portfolio-open") ){
-					Animations.portfolioOpen();
+					Animations.portfolioOpen(this.isTouch);
 					$("body").addClass("portfolio-open");
 				} else {
-					Animations.portfolioClose();
+					Animations.portfolioClose(this.isTouch);
 					$("body").removeClass("portfolio-open");
 				}
 			},

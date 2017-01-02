@@ -148,14 +148,6 @@ function initVue(){
 		el: ".main-container"
 	});
 
-	Canvas.config([
-		".intro-headline",
-		".scroll-indicator",
-		".logo",
-		".date",
-		".sidebar"
-	]);
-
 	if ( !Canvas.Utils.isTouchDevice() ){
 
 		new WOW({
@@ -163,16 +155,19 @@ function initVue(){
 			mobile: "false"
 		}).init();
 
+		Canvas.config([
+			".intro-headline",
+			".scroll-indicator",
+			".logo",
+			".date",
+			".sidebar"
+		]);
+
 	};
 
 	window.scrollTo(0,0);
-
-	$(".logo").on("click", function(){
-		var c = $('html,body');
-		if ( $(window).scrollTop() > 0 ){
-			c.animate({scrollTop: 0}, 1000);
-		}
-	})
+	
+	
 
 }
 

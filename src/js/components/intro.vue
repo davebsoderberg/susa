@@ -48,6 +48,7 @@
 			var duration = 0.8,
 				scrollHandle = document.querySelector(".scroll-handle");
 
+			if (!this.isTouch){
 			var timeline = new TimelineMax({ repeat:-1,repeatDelay: duration/2 * 3 });
 			timeline.set(".scroll-handle", { z: 0.0001, y: "118px", scale: 0 })
 				.set(".scroll-bar-top", { height: "125px"})
@@ -58,7 +59,11 @@
 				.to(".scroll-bar-top", duration - 0.1, { height: "0px" , delay: 0.0135}, "syncTwo")
 				.to(".scroll-handle", duration/2, {  scale: 0, delay: 0.6 }, "syncThree")
 				.to(".scroll-bar-bottom", duration/2, { height: "125px", delay: 0.6}, "syncThree");
-
+			} else {
+				TweenMax.set(".scroll-handle", { z: 0.0001, y: "118px", scale: 1 });
+				TweenMax.set(".scroll-bar-top", { height: '118px' });
+			}
+			
 			function changeCopy(){
 				// Force linebreak headline
 				var desktopHeadline = headline.innerHTML,
@@ -72,6 +77,7 @@
 
 
 			// Intro
+			if ( this.isTouch ) return;
 			var introWaypoint = new Waypoint({
 				element: document.getElementById("section-intro"),
 				handler: function(direction){

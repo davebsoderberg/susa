@@ -44,6 +44,7 @@ module.exports = {
 	ready: function(){
 
 		// Set waypoint for hashchange
+		if ( this.isTouch ) return;
 		var teamWaypoint = new Waypoint({
 			element: document.getElementById("section-pedigree"),
 			handler: function(direction){

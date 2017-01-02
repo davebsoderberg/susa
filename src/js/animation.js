@@ -1,5 +1,4 @@
 // Animations
-
 var $ = require("jquery");
 
 var self = module.exports = {
@@ -60,7 +59,8 @@ var self = module.exports = {
 	portfolioOut: function(){
 		self.portfolioTL().to(".full-portfolio-container", 0.5, { y: "100px" });
 	},
-	portfolioOpen: function(){
+	portfolioOpen: function(isTouch){
+		if ( !isTouch ){
 		self.portfolioModuleTL().to(".full-portfolio-container", 0.6, { y: "0%", height: "100%", backgroundColor: "#e3e5e4",ease: Power2.easeInOut }, "sync")
 			.to(".filterbar", 0.3, { zIndex: 24}, "sync")
 			.to(".btn-view-full", 0.6, {opacity: 0}, "sync")
@@ -68,10 +68,19 @@ var self = module.exports = {
 			.to(".full-portfolio-topbar", 0.6, { backgroundColor: "#FFFFFF"}, "sync")
 			.staggerTo(".filter-item", 0.6, { opacity: 1, x: "0px"}, 0.1)
 			.staggerTo(".portfolio-item", 1.2, { opacity: 1, y: 0 }, 0.1, "-=0.4");
+		} else {
+			self.portfolioModuleTL()
+			.to(".full-portfolio-container", 0.6, { y: "0%", height: "100%", backgroundColor: "#e3e5e4",ease: Power2.easeInOut }, "sync")
+			.to(".filterbar", 0.3, { zIndex: 24}, "sync")
+			.to(".btn-view-full", 0.6, {opacity: 0}, "sync")
+			.to(".view-icon", 0.6, { rotation: "135deg" }, "sync")
+			.to(".full-portfolio-topbar", 0.6, { backgroundColor: "#FFFFFF"}, "sync")
+		}
 	},
-	portfolioClose: function(mode){ 
+	portfolioClose: function(isTouch){ 
 		var modeHeight;
 		this.portfolioMode === "bar" ? modeHeight = "100px" : modeHeight = "0%"
+		if (!isTouch){
 		self.portfolioModuleTL().to(".full-portfolio-topbar", 0.6,{ backgroundColor: "#3d4e4d" }, "sync")
 			.to(".full-portfolio-container", 0.6, { height: modeHeight, backgroundColor: "#3d4e4d", ease: Power2.easeInOut }, "sync")
 			.to(".btn-view-full", 0.6, {opacity: 1}, "sync")
@@ -79,6 +88,13 @@ var self = module.exports = {
 			.to(".view-icon", 0.6, { rotation: "0deg" }, "sync")
 			.staggerTo(".filter-item", 0.6, { opacity: 0, x: "16px"}, 0.1, "sync")
 			.staggerTo(".portfolio-item", 0.6, { opacity: 0, y: "20px" }, 0.1, "sync");
+		} else {
+			self.portfolioModuleTL().to(".full-portfolio-topbar", 0.6,{ backgroundColor: "#3d4e4d" }, "sync")
+			.to(".full-portfolio-container", 0.6, { height: modeHeight, backgroundColor: "#3d4e4d", ease: Power2.easeInOut }, "sync")
+			.to(".btn-view-full", 0.6, {opacity: 1}, "sync")
+			.to(".filterbar", 0.3, { zIndex: -1}, "sync")
+			.to(".view-icon", 0.6, { rotation: "0deg" }, "sync")
+		}
 	},
 	scrollIndicatorShow: function(){
 		self.scrollblarTL().to(".scroll-label", 0.6, { y: 0, opacity: 1 })

@@ -838,6 +838,7 @@ var self = module.exports = function(){
 
 	self.bindEventListeners = function(){
 
+		if (self.Utils.isTouchDevice()) return;
 		window.addEventListener("resize", onWindowResize, false);
 
 	};
